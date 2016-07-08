@@ -65,12 +65,12 @@
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
               <h1></h1>
-              <p><center><img src="/images/evilDicomLogo.png" alt="Logo" title="Evil DICOM Logo"></center></p>
+              <p><center><img src="../images/evilDicomLogo.png" alt="Logo" title="Evil DICOM Logo"></center></p>
 <h2 id="the-structure-of-evil-dicom-core">The Structure of Evil DICOM Core</h2>
 <p>DICOM and especially DICOM programming can seem overwhelming at first and so let&#39;s just get a big picture view of the Evil DICOM library. The cornerstones of the core library are really three classes:</p>
 <h3 id="dicomobject">DICOMObject</h3>
 <p>The outermost object of a DICOM File is considered the DICOM object, which is encapsulated in the DICOMObject class. The DICOM object is really just a container for the elements. The real meat of a DICOM object are the elements it contains. You will probably want to do a few things with DICOM elements. The DICOMObject class provides a few methods and properties that help with finding and manipulating the DICOM elements.</p>
-<p><img src="/images/DICOMObject_700x135.png" alt="Object Illustration" title="DICOM Object"></p>
+<p><img src="../images/DICOMObject_700x135.png" alt="Object Illustration" title="DICOM Object"></p>
 <h3 id="abstractelement">AbstractElement</h3>
 <p>The AbstractElement class is used as a base class for DICOM elements. Elements are the containers of individual pieces of DICOM data that are stored inside of the DICOM object. The elements vary greatly in the type of data that they hold and the AbstractElement class unify and provide access to the similarities of all elements.</p>
 <h3 id="dicomdata">DICOMData</h3>
