@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
   
@@ -8,7 +8,7 @@
     <title>Evil DICOM Selection </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Evil DICOM Selection ">
-    <meta name="generator" content="docfx 2.2.2.0">
+    <meta name="generator" content="docfx 2.12.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -71,8 +71,7 @@
 <p>To create a DICOM selector is easy!</p>
 <pre><code class="lang-csharp">var dcm = DICOMFileReader.Read(&quot;structureSet.dcm&quot;);
 var sel = dcm.GetSelector();
-</code></pre>
-<h3 id="dot-descension">Dot Descension</h3>
+</code></pre><h3 id="dot-descension">Dot Descension</h3>
 <p>The following example shows the simple dot descension into an element of the DICOM object. The Selector is just a wrapper around the object that allows for quick access to the elements.</p>
 <pre><code class="lang-csharp">//Select a single element and get data
 var dcm = DICOMFileReader.Read(&quot;structureSet.dcm&quot;);
@@ -85,8 +84,7 @@ var defaultModality = (dcm.FindFirst(TagHelper.MODALITY) as CodeString).Data;
 var modality = sel.Modality.Data; //RTSTRUCT
 
 Assert.AreEqual(modality, &quot;RTSTRUCT&quot;);
-</code></pre>
-<h3 id="selecting-mulitple-elements">Selecting Mulitple Elements</h3>
+</code></pre><h3 id="selecting-mulitple-elements">Selecting Mulitple Elements</h3>
 <p>Selecting multiple elements of the same type is really easy. Just add an underscore (_) after the name of the element.</p>
 <pre><code class="lang-csharp">var dcm = DICOMFileReader.Read(&quot;structureSet.dcm&quot;);
 var sel = new DICOMSelector(dcm);
@@ -103,16 +101,14 @@ foreach (var roi in roiNumbers)
     Console.WriteLine(roi.Data);
 }
 Assert.AreEqual(roiNumbers.Count, 4);
-</code></pre>
-<h3 id="deep-descension">Deep Descension</h3>
+</code></pre><h3 id="deep-descension">Deep Descension</h3>
 <p>The real payoff of using the module comes when you need to dig deep. The following show just how easy it is to drill deep into the DICOM object using the Selection object</p>
 <pre><code class="lang-csharp">var dcm = DICOMFileReader.Read(Resources.structure);
 var sel = new DICOMSelector(dcm);
 //The first ROT Contour Sequence &gt;&gt; 2nd Contour Sequence &gt;&gt; 36th Number of Contour Point element
 var numPoints = sel.ROIContourSequence.ContourSequence_[1].NumberOfContourPoints_[35];
 Assert.AreEqual(numPoints.Data, 602);
-</code></pre>
-<h3 id="quick-manipulation">Quick Manipulation</h3>
+</code></pre><h3 id="quick-manipulation">Quick Manipulation</h3>
 <p>It is also very easy to quickly modify DICOM data (for anonymization for example).</p>
 <pre><code class="lang-csharp">var dcm = DICOMFileReader.Read(Resources.structure);
 var sel = new DICOMSelector(dcm);
@@ -124,7 +120,6 @@ dcm = DICOMFileReader.Read(&quot;structureMod.dcm&quot;);
 sel = new DICOMSelector(dcm);
 Assert.AreEqual(sel.ROIContourSequence.ContourSequence_[0].NumberOfContourPoints_[1].Data, 603);
 </code></pre>
-
             </article>
           </div>
           

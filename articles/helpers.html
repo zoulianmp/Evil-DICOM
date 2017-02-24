@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
   
@@ -8,7 +8,7 @@
     <title>Evil DICOM Helpers </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Evil DICOM Helpers ">
-    <meta name="generator" content="docfx 2.2.2.0">
+    <meta name="generator" content="docfx 2.12.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -83,8 +83,7 @@
 
  //Using DICOMObject.Find()
  var windowCenter = dcm.FindFirst(TagHelper.WINDOW_CENTER);
-</code></pre>
-<h3 id="using-the-uid-helper">Using the UID Helper</h3>
+</code></pre><h3 id="using-the-uid-helper">Using the UID Helper</h3>
 <p>While I can&#39;t go through all the helper classes, I wanted to show you one more. Since UIDs are everywhere in DICOM files, you might want to know how to generate some. A nifty little helper class is just for that:</p>
 <pre><code class="lang-csharp">var uid = dcm.FindFirst(TagHelper.SOPINSTANCE_UID);
 
@@ -93,7 +92,6 @@ uid.DData = UIDHelper.GenerateUID();
 //Or more specific
 uid.DData = UIDHelper.GenerateUID(ISO3166Helper.UNITED_STATES, vendorID: &quot;456&quot;, suffix:&quot;123&quot;);
 </code></pre>
-
             </article>
           </div>
           

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
   
@@ -8,7 +8,7 @@
     <title>Basic Operations </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Basic Operations ">
-    <meta name="generator" content="docfx 2.2.2.0">
+    <meta name="generator" content="docfx 2.12.1.0">
     
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/docfx.vendor.css">
@@ -73,8 +73,7 @@ var dcm = DICOMObject.Read(dBytes);
 
 //Writing is equally easy
 dcm.SaveAs(&quot;MyHackedDICOMFile.dcm&quot;);
-</code></pre>
-<p>The dcm variable is now a DICOM object. It is in fact the outermost DICOM object from the file string that was input into the Read() method. The DICOMObject class is the main class of Evil DICOM.  Of course the DICOM object is really just a container for all of the DICOM elements that you will want to get and luckily for you, it is easy to do. Now that we did the useless task of reading a file and writing it back unchanged, let&#39;s look at some code we can insert in between.</p>
+</code></pre><p>The dcm variable is now a DICOM object. It is in fact the outermost DICOM object from the file string that was input into the Read() method. The DICOMObject class is the main class of Evil DICOM.  Of course the DICOM object is really just a container for all of the DICOM elements that you will want to get and luckily for you, it is easy to do. Now that we did the useless task of reading a file and writing it back unchanged, let&#39;s look at some code we can insert in between.</p>
 <h3 id="working-with-elements">Working With Elements</h3>
 <h4 id="the-idicomelement-interface">The IDICOMElement Interface</h4>
 <p>Each DICOM element contains a little piece of data. The element (VR) type provides enough information for determining what type of data the element contains. All Evil DICOM elements implement the IDICOMElement interface. This interface looks like:</p>
@@ -85,15 +84,13 @@ dcm.SaveAs(&quot;MyHackedDICOMFile.dcm&quot;);
    dynamic DData { get; set; }
    dynamic DData_ { get; set; }
 }
-</code></pre>
-<p>The tag holds all of the identifying information for the element. The IDICOMElement interface also exposes the element&#39;s data, but it is not strongly typed. Because each element can hold different types of data. You can cast the data to a certain type if you know what it is supposed to be, otherwise I will show you some wicked ways of getting the strongly typed data you want.</p>
+</code></pre><p>The tag holds all of the identifying information for the element. The IDICOMElement interface also exposes the element&#39;s data, but it is not strongly typed. Because each element can hold different types of data. You can cast the data to a certain type if you know what it is supposed to be, otherwise I will show you some wicked ways of getting the strongly typed data you want.</p>
 <h3 id="generic-data-casting-elements">Generic Data Casting Elements</h3>
 <p>If you don&#39;t know the underlying VR type, but you know the type of data that it contains, you can always cast to the more generic AbstactElement where T is the type of data. As you can see below, there is an advantage to knowing the actual VR element type because it provides more intuitive methods of data access (eg. the &quot;FirstName&quot; and &quot;LastName&quot; properties of the PersonName class). You lose those on a generic cast.</p>
 <pre><code class="lang-csharp">//Generic casting
 var genericName = dcm.FindFirst(TagHelper.PATIENT_NAME) as AbstractElement&lt;string;
 var genValue = genericName.Data; // returns Flinstone^Fred
-</code></pre>
-<h3 id="specific-casting-elements">Specific Casting Elements</h3>
+</code></pre><h3 id="specific-casting-elements">Specific Casting Elements</h3>
 <p>Each VR (value representation) has its own class. If you know the underlying VR, you can cast to a VR class to get some handy strong typed variables.</p>
 <pre><code class="lang-csharp">//The patient&#39;s name IDICOMElement
 var pName = dcm.FindFirst(TagHelper.PATIENT_NAME);
@@ -106,13 +103,11 @@ var lastName = strongName.LastName;
 //You can manipulate this way also
 strongName.FirstName = &quot;Fred&quot;;
 strongName.LastName = &quot;Flinstone&quot;;
-</code></pre>
-<h3 id="finding-dicom-elements">Finding DICOM Elements</h3>
+</code></pre><h3 id="finding-dicom-elements">Finding DICOM Elements</h3>
 <p>The DICOMObject class (dcm variable below) provides two properties that give access to all contained elements. The Elements property gives access to the direct children of the DICOM object and the AllElements property returns all descendant elements including children of elements.</p>
 <pre><code class="lang-csharp">var directChildren = dcm.Elements;
 var allDescendants = dcm.AllElements
-</code></pre>
-<p>Of course you might need to be more specific about the elements you want returned. There are several methods to help you get what you need.</p>
+</code></pre><p>Of course you might need to be more specific about the elements you want returned. There are several methods to help you get what you need.</p>
 <pre><code class="lang-csharp">//Finds the first instance of the Group Length element (0002,0000)
 var firstInstance = dcm.FindFirst(&quot;00020000&quot;);
 
@@ -124,8 +119,7 @@ var specificTree = dcm.FindAll(new Tag[]{ TagHelper.PROCEDURE_CODE_SEQUENCE, Tag
 
 //Finds all elements that are of VR type PersonName
 var allPersonsNameElements = dcm.FindAll(Enums.VR.PersonName);
-</code></pre>
-<h3 id="replacing-and-removing-elements">Replacing and Removing Elements</h3>
+</code></pre><h3 id="replacing-and-removing-elements">Replacing and Removing Elements</h3>
 <p>Sometimes, you may just want to remove or replace an element. That is easy as well:</p>
 <pre><code class="lang-csharp">var refName = new PersonName
     {
@@ -143,8 +137,7 @@ dcm.ReplaceOrAdd(refName);
 //Remove elements by tag
 dcm.Remove(&quot;00020000&quot;);
 dcm.Remove(TagHelper.SEGMENT_NUMBER);
-</code></pre>
-<h3 id="working-with-dicom-data">Working with DICOM Data</h3>
+</code></pre><h3 id="working-with-dicom-data">Working with DICOM Data</h3>
 <p>DICOM data containers need to be very flexible. They must be able to have single values, multiple values, and be null. Evil DICOM accommodates these needs with the DICOMData class. This class wraps a list of data of type T and provides easy access to the single data and multiple data. The following demonstrates how to grab a single (first) value and a multiple value property. It might seem weird to use an underscore at first, but when you are digging deep into DICOM, it helps to keep thinks terse but readable.</p>
 <pre><code class="lang-csharp">//Patient&#39;s age is a single string value
 var age = dcm.FindFirst(TagHelper.PATIENT_AGE) as AgeString;
@@ -160,12 +153,11 @@ var xyz = position.Data_; //Data as List&lt;T&gt; (in this case List&lt;double&g
 var x = xyz[0];
 var y = xyz[1];
 var z = xyz[2];
-</code></pre>
-<h3 id="see-also">See Also</h3>
+</code></pre><h3 id="see-also">See Also</h3>
 <ul>
-<li><a class="xref" href="articles/structure.html#structure_md">Evil DICOM Structure</a></li>
-<li><a class="xref" href="articles/selection.html#selection_md">Evil DICOM Selection</a></li>
-<li><a class="xref" href="articles/helpers.html#helpers_md">Evil DICOM Helpers</a></li>
+<li><a class="xref" href="articles/structure.html">Evil DICOM Structure</a></li>
+<li><a class="xref" href="articles/selection.html">Evil DICOM Selection</a></li>
+<li><a class="xref" href="articles/helpers.html">Evil DICOM Helpers</a></li>
 </ul>
 
             </article>
