@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
   
@@ -65,16 +65,16 @@
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="structure.md">
               <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/DocFx/articles/structure.md/#L1" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
-              <h2 id="the-structure-of-evil-dicom-core" sourcefile="articles/structure.md" sourcestartlinenumber="6" sourceendlinenumber="6">The Structure of Evil DICOM Core</h2>
+              <h2 id="the-structure-of-evil-dicom-core">The Structure of Evil DICOM Core</h2>
               
-<p sourcefile="articles/structure.md" sourcestartlinenumber="7" sourceendlinenumber="7">DICOM and especially DICOM programming can seem overwhelming at first and so let&#39;s just get a big picture view of the Evil DICOM library. The cornerstones of the core library are really three classes:</p>
-<h3 id="dicomobject" sourcefile="articles/structure.md" sourcestartlinenumber="9" sourceendlinenumber="9">DICOMObject</h3>
-<p sourcefile="articles/structure.md" sourcestartlinenumber="11" sourceendlinenumber="11">The outermost object of a DICOM File is considered the DICOM object, which is encapsulated in the DICOMObject class. The DICOM object is really just a container for the elements. The real meat of a DICOM object are the elements it contains. You will probably want to do a few things with DICOM elements. The DICOMObject class provides a few methods and properties that help with finding and manipulating the DICOM elements.</p>
-<p sourcefile="articles/structure.md" sourcestartlinenumber="13" sourceendlinenumber="13"><img src="../images/DICOMObject_700x135.png" alt="Object Illustration" title="DICOM Object" sourcefile="articles/structure.md" sourcestartlinenumber="13" sourceendlinenumber="13"></p>
-<h3 id="abstractelement" sourcefile="articles/structure.md" sourcestartlinenumber="15" sourceendlinenumber="15">AbstractElement</h3>
-<p sourcefile="articles/structure.md" sourcestartlinenumber="17" sourceendlinenumber="17">The AbstractElement class is used as a base class for DICOM elements. Elements are the containers of individual pieces of DICOM data that are stored inside of the DICOM object. The elements vary greatly in the type of data that they hold and the AbstractElement class unify and provide access to the similarities of all elements.</p>
-<h3 id="dicomdata" sourcefile="articles/structure.md" sourcestartlinenumber="19" sourceendlinenumber="19">DICOMData</h3>
-<p sourcefile="articles/structure.md" sourcestartlinenumber="21" sourceendlinenumber="21">The newest addition to the library is the DICOMData class. It came about because of the flexibility needed for DICOM data. In general DICOM data can have one value, multiple values, or be null. While, an array can potentially capture those needs, I have found it is not as easy to work with as strongly typed properties. The DICOMData class helps meet the needs and flexibility necessary for DICOM data as well as provide a simple interface for accessing and manipulating data.</p>
+<p>DICOM and especially DICOM programming can seem overwhelming at first and so let&#39;s just get a big picture view of the Evil DICOM library. The cornerstones of the core library are really three classes:</p>
+<h3 id="dicomobject">DICOMObject</h3>
+<p>The outermost object of a DICOM File is considered the DICOM object, which is encapsulated in the DICOMObject class. The DICOM object is really just a container for the elements. The real meat of a DICOM object are the elements it contains. You will probably want to do a few things with DICOM elements. The DICOMObject class provides a few methods and properties that help with finding and manipulating the DICOM elements.</p>
+<p><img src="../images/DICOMObject_700x135.png" alt="Object Illustration" title="DICOM Object"></p>
+<h3 id="abstractelement">AbstractElement</h3>
+<p>The AbstractElement class is used as a base class for DICOM elements. Elements are the containers of individual pieces of DICOM data that are stored inside of the DICOM object. The elements vary greatly in the type of data that they hold and the AbstractElement class unify and provide access to the similarities of all elements.</p>
+<h3 id="dicomdata">DICOMData</h3>
+<p>The newest addition to the library is the DICOMData class. It came about because of the flexibility needed for DICOM data. In general DICOM data can have one value, multiple values, or be null. While, an array can potentially capture those needs, I have found it is not as easy to work with as strongly typed properties. The DICOMData class helps meet the needs and flexibility necessary for DICOM data as well as provide a simple interface for accessing and manipulating data.</p>
 
             </article>
           </div>

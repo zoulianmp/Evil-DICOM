@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
   
@@ -65,12 +65,12 @@
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="helpers.md">
               <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/DocFx/articles/helpers.md/#L1" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
-              <h2 id="helper-classes" sourcefile="articles/helpers.md" sourcestartlinenumber="6" sourceendlinenumber="6">Helper Classes</h2>
+              <h2 id="helper-classes">Helper Classes</h2>
               
-<p sourcefile="articles/helpers.md" sourcestartlinenumber="7" sourceendlinenumber="7">There are a lot of details about DICOM that the libary doesn&#39;t expect you to have memorized. There are several helper classes to help with common problems. I suggest you explore the helper classes in the helper folder of the library. Of all helpers, you will probably use the TagHelper the most.</p>
-<h3 id="the-tag-helper" sourcefile="articles/helpers.md" sourcestartlinenumber="9" sourceendlinenumber="9">The Tag Helper</h3>
-<p sourcefile="articles/helpers.md" sourcestartlinenumber="10" sourceendlinenumber="10">Now I don&#39;t expect you to have memorized all DICOM tags. There is a class called the TagHelper that is designed to get to tag Ids quickly. The Tag Helper actually returns a Tag object with some useful properties:</p>
-<pre sourcefile="articles/helpers.md" sourcestartlinenumber="11" sourceendlinenumber="26"><code class="lang-csharp"> //Returns a tag that has other useful properties
+<p>There are a lot of details about DICOM that the libary doesn&#39;t expect you to have memorized. There are several helper classes to help with common problems. I suggest you explore the helper classes in the helper folder of the library. Of all helpers, you will probably use the TagHelper the most.</p>
+<h3 id="the-tag-helper">The Tag Helper</h3>
+<p>Now I don&#39;t expect you to have memorized all DICOM tags. There is a class called the TagHelper that is designed to get to tag Ids quickly. The Tag Helper actually returns a Tag object with some useful properties:</p>
+<pre><code class="lang-csharp"> //Returns a tag that has other useful properties
  var windowTag= TagHelper.WINDOW_CENTER;
 
  //Group string
@@ -84,9 +84,9 @@
 
  //Using DICOMObject.Find()
  var windowCenter = dcm.FindFirst(TagHelper.WINDOW_CENTER);
-</code></pre><h3 id="using-the-uid-helper" sourcefile="articles/helpers.md" sourcestartlinenumber="28" sourceendlinenumber="28">Using the UID Helper</h3>
-<p sourcefile="articles/helpers.md" sourcestartlinenumber="29" sourceendlinenumber="29">While I can&#39;t go through all the helper classes, I wanted to show you one more. Since UIDs are everywhere in DICOM files, you might want to know how to generate some. A nifty little helper class is just for that:</p>
-<pre sourcefile="articles/helpers.md" sourcestartlinenumber="30" sourceendlinenumber="37"><code class="lang-csharp">var uid = dcm.FindFirst(TagHelper.SOPINSTANCE_UID);
+</code></pre><h3 id="using-the-uid-helper">Using the UID Helper</h3>
+<p>While I can&#39;t go through all the helper classes, I wanted to show you one more. Since UIDs are everywhere in DICOM files, you might want to know how to generate some. A nifty little helper class is just for that:</p>
+<pre><code class="lang-csharp">var uid = dcm.FindFirst(TagHelper.SOPINSTANCE_UID);
 
 //Override
 uid.DData = UIDHelper.GenerateUID();

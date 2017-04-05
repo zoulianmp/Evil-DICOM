@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
   
@@ -71,7 +71,7 @@
               <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Network/Querying/QueryBuilder.cs/#L19" class="btn btn-primary pull-right mobile-hide">View Source</a>
               <h1 id="" data-uid="EvilDICOM.Network.Querying.QueryBuilder">Class QueryBuilder
               </h1>
-              <div class="markdown level0 summary"><p sourcefile="api/EvilDICOM.Network.Querying.QueryBuilder.yml" sourcestartlinenumber="2" sourceendlinenumber="2">A class to help with CFind and CMove operations</p>
+              <div class="markdown level0 summary"><p>A class to help with CFind and CMove operations</p>
 </div>
               <div class="markdown level0 conceptual"></div>
               <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -98,7 +98,7 @@
                 <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Network/Querying/QueryBuilder.cs/#L29">View Source</a>
               </span>
               <h4 id="constructors" data-uid="EvilDICOM.Network.Querying.QueryBuilder.#ctor(EvilDICOM.Network.DICOMSCU,EvilDICOM.Network.Entity)">QueryBuilder(DICOMSCU, Entity)</h4>
-              <div class="markdown level1 summary"><p sourcefile="api/EvilDICOM.Network.Querying.QueryBuilder.yml" sourcestartlinenumber="2" sourceendlinenumber="2">A Query builder constructor which requires a SCU and SCP entity</p>
+              <div class="markdown level1 summary"><p>A Query builder constructor which requires a SCU and SCP entity</p>
 </div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
@@ -118,13 +118,13 @@
                   <tr>
                     <td><a class="xref" href="EvilDICOM.Network.DICOMSCU.html">DICOMSCU</a></td>
                     <td><em>scu</em></td>
-                    <td><p sourcefile="api/EvilDICOM.Network.Querying.QueryBuilder.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The SCU client which will perform the operations and queries</p>
+                    <td><p>The SCU client which will perform the operations and queries</p>
 </td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="EvilDICOM.Network.Entity.html">Entity</a></td>
                     <td><em>scp</em></td>
-                    <td><p sourcefile="api/EvilDICOM.Network.Querying.QueryBuilder.yml" sourcestartlinenumber="1" sourceendlinenumber="1">the SCP which will send the results</p>
+                    <td><p>the SCP which will send the results</p>
 </td>
                   </tr>
                 </tbody>
@@ -467,7 +467,7 @@
                 <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Network/Querying/QueryBuilder.cs/#L116">View Source</a>
               </span>
               <h4 id="methods" data-uid="EvilDICOM.Network.Querying.QueryBuilder.SendImage(EvilDICOM.Network.DIMSE.IOD.CFindImageIOD,System.String,System.UInt16@)">SendImage(CFindImageIOD, String, ref UInt16)</h4>
-              <div class="markdown level1 summary"><p sourcefile="api/EvilDICOM.Network.Querying.QueryBuilder.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Instructs a C-MOVE operation for an image from the SCP of the QueryBuilder to the input AETitle</p>
+              <div class="markdown level1 summary"><p>Instructs a C-MOVE operation for an image from the SCP of the QueryBuilder to the input AETitle</p>
 </div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
@@ -487,19 +487,19 @@
                   <tr>
                     <td><a class="xref" href="EvilDICOM.Network.DIMSE.IOD.CFindImageIOD.html">CFindImageIOD</a></td>
                     <td><em>ir</em></td>
-                    <td><p sourcefile="api/EvilDICOM.Network.Querying.QueryBuilder.yml" sourcestartlinenumber="1" sourceendlinenumber="1">the C Find iod of the a query (get ImageUids())</p>
+                    <td><p>the C Find iod of the a query (get ImageUids())</p>
 </td>
                   </tr>
                   <tr>
                     <td><span class="xref">System.String</span></td>
                     <td><em>receivingAETitle</em></td>
-                    <td><p sourcefile="api/EvilDICOM.Network.Querying.QueryBuilder.yml" sourcestartlinenumber="1" sourceendlinenumber="1">the AE title to send the image to (from the SCP of this query builder)</p>
+                    <td><p>the AE title to send the image to (from the SCP of this query builder)</p>
 </td>
                   </tr>
                   <tr>
                     <td><span class="xref">System.UInt16</span></td>
                     <td><em>msgId</em></td>
-                    <td><p sourcefile="api/EvilDICOM.Network.Querying.QueryBuilder.yml" sourcestartlinenumber="1" sourceendlinenumber="1">the message id for this image. It will be incremented for looping operations within this method</p>
+                    <td><p>the message id for this image. It will be incremented for looping operations within this method</p>
 </td>
                   </tr>
                 </tbody>
@@ -515,7 +515,7 @@
                 <tbody>
                   <tr>
                     <td><a class="xref" href="EvilDICOM.Network.DIMSE.CMoveResponse.html">CMoveResponse</a></td>
-                    <td><p sourcefile="api/EvilDICOM.Network.Querying.QueryBuilder.yml" sourcestartlinenumber="1" sourceendlinenumber="1">a C-MOVE response for this operation</p>
+                    <td><p>a C-MOVE response for this operation</p>
 </td>
                   </tr>
                 </tbody>
@@ -525,7 +525,7 @@
                 <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Network/Querying/QueryBuilder.cs/#L129">View Source</a>
               </span>
               <h4 id="methods" data-uid="EvilDICOM.Network.Querying.QueryBuilder.SendImageAsync(EvilDICOM.Network.DIMSE.IOD.CFindImageIOD,System.String,System.UInt16)">SendImageAsync(CFindImageIOD, String, UInt16)</h4>
-              <div class="markdown level1 summary"><p sourcefile="api/EvilDICOM.Network.Querying.QueryBuilder.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Instructs a C-MOVE operation for an image from the SCP of the QueryBuilder to the input AETitle</p>
+              <div class="markdown level1 summary"><p>Instructs a C-MOVE operation for an image from the SCP of the QueryBuilder to the input AETitle</p>
 </div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
@@ -545,19 +545,19 @@
                   <tr>
                     <td><a class="xref" href="EvilDICOM.Network.DIMSE.IOD.CFindImageIOD.html">CFindImageIOD</a></td>
                     <td><em>ir</em></td>
-                    <td><p sourcefile="api/EvilDICOM.Network.Querying.QueryBuilder.yml" sourcestartlinenumber="1" sourceendlinenumber="1">the C Find iod of the a query (get ImageUids())</p>
+                    <td><p>the C Find iod of the a query (get ImageUids())</p>
 </td>
                   </tr>
                   <tr>
                     <td><span class="xref">System.String</span></td>
                     <td><em>receivingAETitle</em></td>
-                    <td><p sourcefile="api/EvilDICOM.Network.Querying.QueryBuilder.yml" sourcestartlinenumber="1" sourceendlinenumber="1">the AE title to send the image to (from the SCP of this query builder)</p>
+                    <td><p>the AE title to send the image to (from the SCP of this query builder)</p>
 </td>
                   </tr>
                   <tr>
                     <td><span class="xref">System.UInt16</span></td>
                     <td><em>msgId</em></td>
-                    <td><p sourcefile="api/EvilDICOM.Network.Querying.QueryBuilder.yml" sourcestartlinenumber="1" sourceendlinenumber="1">the message id for this image. It will NOT be incremented for looping operations within this method</p>
+                    <td><p>the message id for this image. It will NOT be incremented for looping operations within this method</p>
 </td>
                   </tr>
                 </tbody>
@@ -573,7 +573,7 @@
                 <tbody>
                   <tr>
                     <td><span class="xref">Task</span>&lt;<a class="xref" href="EvilDICOM.Network.DIMSE.CMoveResponse.html">CMoveResponse</a>&gt;</td>
-                    <td><p sourcefile="api/EvilDICOM.Network.Querying.QueryBuilder.yml" sourcestartlinenumber="1" sourceendlinenumber="1">a C-MOVE response for this operation</p>
+                    <td><p>a C-MOVE response for this operation</p>
 </td>
                   </tr>
                 </tbody>
