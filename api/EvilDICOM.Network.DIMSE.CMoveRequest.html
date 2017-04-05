@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class CMoveRequest
    ">
-    <meta name="generator" content="docfx 2.13.1.0">
+    <meta name="generator" content="docfx 2.15.5.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -68,7 +68,7 @@
             <article class="content wrap" id="_content">
               
               
-              
+              <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Network/DIMSE/CMoveRequest.cs/#L14" class="btn btn-primary pull-right mobile-hide">View Source</a>
               <h1 id="" data-uid="EvilDICOM.Network.DIMSE.CMoveRequest">Class CMoveRequest
               </h1>
               <div class="markdown level0 summary"></div>
@@ -126,25 +126,7 @@
                   <a class="xref" href="EvilDICOM.Network.DIMSE.AbstractDIMSEBase.html">AbstractDIMSEBase.DataSetType</a>
                 </div>
                 <div>
-                  <span class="xref">System.Object.ToString()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.Equals(System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.GetHashCode()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.GetType()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.MemberwiseClone()</span>
+                  <a class="xref" href="EvilDICOM.Network.DIMSE.AbstractDIMSEBase.html">AbstractDIMSEBase.SetGroupLength()</a>
                 </div>
               </div>
               <h6><strong>Namespace</strong>:EvilDICOM.Network.DIMSE</h6>
@@ -156,7 +138,9 @@
               <h3 id="constructors">Constructors
               </h3>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Network/DIMSE/CMoveRequest.cs/#L38">View Source</a>
+              </span>
               <h4 id="constructors" data-uid="EvilDICOM.Network.DIMSE.CMoveRequest.#ctor(EvilDICOM.Core.DICOMObject)">CMoveRequest(DICOMObject)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -182,13 +166,15 @@
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Network/DIMSE/CMoveRequest.cs/#L19">View Source</a>
+              </span>
               <h4 id="constructors" data-uid="EvilDICOM.Network.DIMSE.CMoveRequest.#ctor(EvilDICOM.Network.DIMSE.IOD.CMoveIOD,System.String,EvilDICOM.Network.Enums.Root,EvilDICOM.Core.Enums.Priority,System.UInt16)">CMoveRequest(CMoveIOD, String, Root, Priority, UInt16)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public CMoveRequest(CMoveIOD iod, string moveToAeTitle, Root root = Root.STUDY, Priority priority = Priority.MEDIUM, ushort messageId = 1)</code></pre>
+                <pre><code class="lang-csharp hljs">public CMoveRequest(CMoveIOD iod, string moveToAeTitle, Root root = Root.STUDY, Priority priority = null, ushort messageId = null)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -230,10 +216,12 @@
               <h3 id="properties">Properties
               </h3>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Network/DIMSE/CMoveRequest.cs/#L53">View Source</a>
+              </span>
               <h4 id="properties" data-uid="EvilDICOM.Network.DIMSE.CMoveRequest.Elements">Elements</h4>
-              <div class="markdown level1 summary"><pre><code>The order of elements to send in a IIOD packet
-</code></pre></div>
+              <div class="markdown level1 summary"><p>The order of elements to send in a IIOD packet</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -249,7 +237,7 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EvilDICOM.Core.Interfaces.IDICOMElement.html">IDICOMElement</a>&gt;</td>
+                    <td><span class="xref">List</span>&lt;<a class="xref" href="EvilDICOM.Core.Interfaces.IDICOMElement.html">IDICOMElement</a>&gt;</td>
                     <td></td>
                   </tr>
                 </tbody>
@@ -259,7 +247,9 @@
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="EvilDICOM.Core.Interfaces.IIOD.html">IIOD.Elements</a></div>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Network/DIMSE/CMoveRequest.cs/#L78">View Source</a>
+              </span>
               <h4 id="properties" data-uid="EvilDICOM.Network.DIMSE.CMoveRequest.MoveDestination">MoveDestination</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -283,7 +273,9 @@
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Network/DIMSE/CMoveRequest.cs/#L72">View Source</a>
+              </span>
               <h4 id="properties" data-uid="EvilDICOM.Network.DIMSE.CMoveRequest.Priority">Priority</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -309,9 +301,6 @@
               <h3 id="extensionmethods">Extension Methods</h3>
               <div>
                   <a class="xref" href="EvilDICOM.Network.Extensions.DIMSEExtensions.html">DIMSEExtensions.LogData(Association)</a>
-              </div>
-              <div>
-                  <a class="xref" href="EvilDICOM.Network.Extensions.IIODExtensions.html">IIODExtensions.GetLogString()</a>
               </div>
               <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
               <!-- API Ad -->

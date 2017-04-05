@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class LengthReader
    ">
-    <meta name="generator" content="docfx 2.13.1.0">
+    <meta name="generator" content="docfx 2.15.5.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -68,11 +68,11 @@
             <article class="content wrap" id="_content">
               
               
-              
+              <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/IO/Reading/LengthReader.cs/#L11" class="btn btn-primary pull-right mobile-hide">View Source</a>
               <h1 id="" data-uid="EvilDICOM.Core.IO.Reading.LengthReader">Class LengthReader
               </h1>
-              <div class="markdown level0 summary"><pre><code>Contains methods for reading the length of DICOM elements
-</code></pre></div>
+              <div class="markdown level0 summary"><p>Contains methods for reading the length of DICOM elements</p>
+</div>
               <div class="markdown level0 conceptual"></div>
               <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
               <!-- API Ad -->
@@ -85,40 +85,18 @@
                   <div class="level0"><span class="xref">System.Object</span></div>
                   <div class="level1"><span class="xref">LengthReader</span></div>
               </div>
-              <div class="inheritedMembers">
-                <h5>Inherited Members</h5>
-                <div>
-                  <span class="xref">System.Object.ToString()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.Equals(System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.GetHashCode()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.GetType()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.MemberwiseClone()</span>
-                </div>
-              </div>
               <h6><strong>Namespace</strong>:EvilDICOM.Core.IO.Reading</h6>
               <h6><strong>Assembly</strong>:EvilDICOM.dll</h6>
               <h5 id="_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public class LengthReader</code></pre>
+                <pre><code class="lang-csharp hljs">public class LengthReader : object</code></pre>
               </div>
               <h3 id="methods">Methods
               </h3>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/IO/Reading/LengthReader.cs/#L113">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.IO.Reading.LengthReader.IsIndefinite(System.Int32)">IsIndefinite(Int32)</h4>
               <div class="markdown level1 summary"><p>Checks to see if length is indefinite type (eg. FFFFFFFF)</p>
 </div>
@@ -161,11 +139,13 @@
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/IO/Reading/LengthReader.cs/#L21">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.IO.Reading.LengthReader.Read(EvilDICOM.Core.Enums.VR,EvilDICOM.Core.IO.Reading.DICOMBinaryReader,EvilDICOM.Core.Enums.TransferSyntax)">Read(VR, DICOMBinaryReader, TransferSyntax)</h4>
-              <div class="markdown level1 summary"><pre><code>Reads the length from a series of bytes in a stream. The number of bytes is automatically determined from
-VR.
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Reads the length from a series of bytes in a stream. The number of bytes is automatically determined from
+VR.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -217,12 +197,14 @@ VR.
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/IO/Reading/LengthReader.cs/#L89">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.IO.Reading.LengthReader.ReadBigEndian(EvilDICOM.Core.Enums.VR,EvilDICOM.Core.IO.Reading.DICOMBinaryReader)">ReadBigEndian(VR, DICOMBinaryReader)</h4>
-              <div class="markdown level1 summary"><pre><code>Reads the length in big endian byte format from a series of bytes in a stream. The number of bytes is automatically
+              <div class="markdown level1 summary"><p>Reads the length in big endian byte format from a series of bytes in a stream. The number of bytes is automatically
 determined from
-VR.
-</code></pre></div>
+VR.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -268,10 +250,12 @@ VR.
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/IO/Reading/LengthReader.cs/#L124">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.IO.Reading.LengthReader.ReadBigEndian(EvilDICOM.Core.IO.Reading.DICOMBinaryReader,System.Int32)">ReadBigEndian(DICOMBinaryReader, Int32)</h4>
-              <div class="markdown level1 summary"><pre><code>Reads the length in big endian byte format from a series of bytes in a stream
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Reads the length in big endian byte format from a series of bytes in a stream</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -318,10 +302,12 @@ VR.
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/IO/Reading/LengthReader.cs/#L142">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.IO.Reading.LengthReader.ReadBigEndian(System.Byte[])">ReadBigEndian(Byte[])</h4>
-              <div class="markdown level1 summary"><pre><code>Reads the length in big endian byte format from a series of bytes in a stream
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Reads the length in big endian byte format from a series of bytes in a stream</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -362,12 +348,14 @@ VR.
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/IO/Reading/LengthReader.cs/#L59">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.IO.Reading.LengthReader.ReadLittleEndian(EvilDICOM.Core.Enums.VR,EvilDICOM.Core.IO.Reading.DICOMBinaryReader)">ReadLittleEndian(VR, DICOMBinaryReader)</h4>
-              <div class="markdown level1 summary"><pre><code>Reads the length in little endian byte format from a series of bytes in a stream. The number of bytes is
+              <div class="markdown level1 summary"><p>Reads the length in little endian byte format from a series of bytes in a stream. The number of bytes is
 automatically determined from
-VR.
-</code></pre></div>
+VR.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -413,10 +401,12 @@ VR.
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/IO/Reading/LengthReader.cs/#L38">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.IO.Reading.LengthReader.ReadLittleEndian(EvilDICOM.Core.IO.Reading.DICOMBinaryReader,System.Int32)">ReadLittleEndian(DICOMBinaryReader, Int32)</h4>
-              <div class="markdown level1 summary"><pre><code>Reads the length in little endian byte format from a series of bytes in a stream
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Reads the length in little endian byte format from a series of bytes in a stream</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -463,10 +453,12 @@ VR.
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/IO/Reading/LengthReader.cs/#L161">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.IO.Reading.LengthReader.ReadLittleEndian(System.Byte[])">ReadLittleEndian(Byte[])</h4>
-              <div class="markdown level1 summary"><pre><code>Reads the length in little endian byte format from a series of bytes in a stream
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Reads the length in little endian byte format from a series of bytes in a stream</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">

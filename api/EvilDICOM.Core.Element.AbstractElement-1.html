@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class AbstractElement&lt;T&gt;
    ">
-    <meta name="generator" content="docfx 2.13.1.0">
+    <meta name="generator" content="docfx 2.15.5.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -68,12 +68,12 @@
             <article class="content wrap" id="_content">
               
               
-              
+              <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/Element/AbstractElement.cs/#L16" class="btn btn-primary pull-right mobile-hide">View Source</a>
               <h1 id="" data-uid="EvilDICOM.Core.Element.AbstractElement`1">Class AbstractElement&lt;T&gt;
               </h1>
-              <div class="markdown level0 summary"><pre><code>The overarching abstract class from which all DICOM element classes derive. Contains properties that are common to
-elements.
-</code></pre></div>
+              <div class="markdown level0 summary"><p>The overarching abstract class from which all DICOM element classes derive. Contains properties that are common to
+elements.</p>
+</div>
               <div class="markdown level0 conceptual"></div>
               <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
               <!-- API Ad -->
@@ -86,32 +86,11 @@ elements.
                   <div class="level0"><span class="xref">System.Object</span></div>
                   <div class="level1"><span class="xref">AbstractElement&lt;T&gt;</span></div>
               </div>
-              <div class="inheritedMembers">
-                <h5>Inherited Members</h5>
-                <div>
-                  <span class="xref">System.Object.Equals(System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.GetHashCode()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.GetType()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.MemberwiseClone()</span>
-                </div>
-              </div>
               <h6><strong>Namespace</strong>:EvilDICOM.Core.Element</h6>
               <h6><strong>Assembly</strong>:EvilDICOM.dll</h6>
               <h5 id="_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public abstract class AbstractElement&lt;T&gt; : IDICOMElement</code></pre>
+                <pre><code class="lang-csharp hljs">public abstract class AbstractElement&lt;T&gt; : object, IDICOMElement</code></pre>
               </div>
               <h5 class="typeParameters">Type Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -132,18 +111,24 @@ elements.
               <h3 id="constructors">Constructors
               </h3>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/Element/AbstractElement.cs/#L21">View Source</a>
+              </span>
               <h4 id="constructors" data-uid="EvilDICOM.Core.Element.AbstractElement`1.#ctor">AbstractElement()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="EvilDICOM.Core.Element.AbstractElement-1.html">AbstractElement&lt;T&gt;</a> class.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
                 <pre><code class="lang-csharp hljs">public AbstractElement()</code></pre>
               </div>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/Element/AbstractElement.cs/#L43">View Source</a>
+              </span>
               <h4 id="constructors" data-uid="EvilDICOM.Core.Element.AbstractElement`1.#ctor(EvilDICOM.Core.Element.Tag,`0)">AbstractElement(Tag, T)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="EvilDICOM.Core.Element.AbstractElement-1.html">AbstractElement&lt;T&gt;</a> class.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -162,19 +147,24 @@ elements.
                   <tr>
                     <td><a class="xref" href="EvilDICOM.Core.Element.Tag.html">Tag</a></td>
                     <td><em>tag</em></td>
-                    <td></td>
+                    <td><p>The tag.</p>
+</td>
                   </tr>
                   <tr>
                     <td><span class="xref">T</span></td>
                     <td><em>data</em></td>
-                    <td></td>
+                    <td><p>The data.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/Element/AbstractElement.cs/#L31">View Source</a>
+              </span>
               <h4 id="constructors" data-uid="EvilDICOM.Core.Element.AbstractElement`1.#ctor(EvilDICOM.Core.Element.Tag,`0[])">AbstractElement(Tag, T[])</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="EvilDICOM.Core.Element.AbstractElement-1.html">AbstractElement&lt;T&gt;</a> class.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -193,22 +183,26 @@ elements.
                   <tr>
                     <td><a class="xref" href="EvilDICOM.Core.Element.Tag.html">Tag</a></td>
                     <td><em>tag</em></td>
-                    <td></td>
+                    <td><p>The tag.</p>
+</td>
                   </tr>
                   <tr>
                     <td>T[]</td>
                     <td><em>dataArray</em></td>
-                    <td></td>
+                    <td><p>The data array.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h3 id="properties">Properties
               </h3>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/Element/AbstractElement.cs/#L66">View Source</a>
+              </span>
               <h4 id="properties" data-uid="EvilDICOM.Core.Element.AbstractElement`1.Data">Data</h4>
-              <div class="markdown level1 summary"><pre><code>The data of the element
-</code></pre></div>
+              <div class="markdown level1 summary"><p>The data of the element</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -225,15 +219,18 @@ elements.
                 <tbody>
                   <tr>
                     <td><span class="xref">T</span></td>
-                    <td></td>
+                    <td><p>The data.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/Element/AbstractElement.cs/#L76">View Source</a>
+              </span>
               <h4 id="properties" data-uid="EvilDICOM.Core.Element.AbstractElement`1.Data_">Data_</h4>
-              <div class="markdown level1 summary"><pre><code>The data of the element as a list (for multiple data)
-</code></pre></div>
+              <div class="markdown level1 summary"><p>The data of the element as a list (for multiple data)</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -249,16 +246,19 @@ elements.
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Collections.Generic.List</span>&lt;T&gt;</td>
-                    <td></td>
+                    <td><span class="xref">List</span>&lt;T&gt;</td>
+                    <td><p>The data_.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/Element/AbstractElement.cs/#L92">View Source</a>
+              </span>
               <h4 id="properties" data-uid="EvilDICOM.Core.Element.AbstractElement`1.DatType">DatType</h4>
-              <div class="markdown level1 summary"><pre><code>The clr type of the contained data
-</code></pre></div>
+              <div class="markdown level1 summary"><p>The clr type of the contained data</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -274,18 +274,21 @@ elements.
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Type</span></td>
-                    <td></td>
+                    <td><span class="xref">Type</span></td>
+                    <td><p>The type of the dat.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="EvilDICOM.Core.Interfaces.IDICOMElement.html">IDICOMElement.DatType</a></div>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/Element/AbstractElement.cs/#L101">View Source</a>
+              </span>
               <h4 id="properties" data-uid="EvilDICOM.Core.Element.AbstractElement`1.DData">DData</h4>
-              <div class="markdown level1 summary"><pre><code>The non-typed data that can be accessed in a dynamic context
-</code></pre></div>
+              <div class="markdown level1 summary"><p>The non-typed data that can be accessed in a dynamic context</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -302,16 +305,20 @@ elements.
                 <tbody>
                   <tr>
                     <td><span class="xref">System.Object</span></td>
-                    <td></td>
+                    <td><p>The d data.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="EvilDICOM.Core.Interfaces.IDICOMElement.html">IDICOMElement.DData</a></div>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/Element/AbstractElement.cs/#L111">View Source</a>
+              </span>
               <h4 id="properties" data-uid="EvilDICOM.Core.Element.AbstractElement`1.DData_">DData_</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>The dynamic data in the element stored in a list of type T</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -327,18 +334,21 @@ elements.
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Collections.ICollection</span></td>
-                    <td></td>
+                    <td><span class="xref">ICollection</span></td>
+                    <td><p>The d data_.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="EvilDICOM.Core.Interfaces.IDICOMElement.html">IDICOMElement.DData_</a></div>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/Element/AbstractElement.cs/#L86">View Source</a>
+              </span>
               <h4 id="properties" data-uid="EvilDICOM.Core.Element.AbstractElement`1.Tag">Tag</h4>
-              <div class="markdown level1 summary"><pre><code>The tag of the element
-</code></pre></div>
+              <div class="markdown level1 summary"><p>The tag of the element</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -355,17 +365,20 @@ elements.
                 <tbody>
                   <tr>
                     <td><a class="xref" href="EvilDICOM.Core.Element.Tag.html">Tag</a></td>
-                    <td></td>
+                    <td><p>The tag.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="EvilDICOM.Core.Interfaces.IDICOMElement.html">IDICOMElement.Tag</a></div>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/Element/AbstractElement.cs/#L54">View Source</a>
+              </span>
               <h4 id="properties" data-uid="EvilDICOM.Core.Element.AbstractElement`1.VR">VR</h4>
-              <div class="markdown level1 summary"><pre><code>The value representation of the element
-</code></pre></div>
+              <div class="markdown level1 summary"><p>The value representation of the element</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -382,17 +395,20 @@ elements.
                 <tbody>
                   <tr>
                     <td><a class="xref" href="EvilDICOM.Core.Enums.VR.html">VR</a></td>
-                    <td></td>
+                    <td><p>The vr.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h3 id="methods">Methods
               </h3>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/Element/AbstractElement.cs/#L156">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.Element.AbstractElement`1.GetDataOrDefault">GetDataOrDefault()</h4>
-              <div class="markdown level1 summary"><pre><code>Plumbing method to get data from the underlying DICOMData object
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Plumbing method to get data from the underlying DICOMData object</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -409,15 +425,18 @@ elements.
                 <tbody>
                   <tr>
                     <td><span class="xref">T</span></td>
-                    <td></td>
+                    <td><p>T.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/Element/AbstractElement.cs/#L138">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.Element.AbstractElement`1.SetData(`0)">SetData(T)</h4>
-              <div class="markdown level1 summary"><pre><code>Plumbing method wrap the data in a DICOMData container
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Plumbing method wrap the data in a DICOMData container</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -442,10 +461,12 @@ elements.
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/Element/AbstractElement.cs/#L147">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.Element.AbstractElement`1.SetData(`0[])">SetData(T[])</h4>
-              <div class="markdown level1 summary"><pre><code>Plumbing method wrap the data in a DICOMData container
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Plumbing method wrap the data in a DICOMData container</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -464,15 +485,18 @@ elements.
                   <tr>
                     <td>T[]</td>
                     <td><em>dataArray</em></td>
-                    <td></td>
+                    <td><p>The data array.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/Element/AbstractElement.cs/#L121">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.Element.AbstractElement`1.ToString">ToString()</h4>
-              <div class="markdown level1 summary"><pre><code>To string override to visualize tag and vr of element
-</code></pre></div>
+              <div class="markdown level1 summary"><p>To string override to visualize tag and vr of element</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -489,19 +513,11 @@ elements.
                 <tbody>
                   <tr>
                     <td><span class="xref">System.String</span></td>
-                    <td></td>
+                    <td><p>A <see cref="!:System.String"></see> that represents this instance.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
-              <h5 class="overrides">Overrides</h5>
-              <div><span class="xref">System.Object.ToString()</span></div>
-              <h3 id="extensionmethods">Extension Methods</h3>
-              <div>
-                  <a class="xref" href="EvilDICOM.Core.Extensions.IDICOMElementExtensions.html">IDICOMElementExtensions.IsVR(VR)</a>
-              </div>
-              <div>
-                  <a class="xref" href="EvilDICOM.Core.Extensions.IDICOMElementExtensions.html">IDICOMElementExtensions.ToXElement()</a>
-              </div>
               <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
               <!-- API Ad -->
               <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-8634681343664488" data-ad-slot="2969171149"></ins>

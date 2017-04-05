@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DICOMElementReader
    ">
-    <meta name="generator" content="docfx 2.13.1.0">
+    <meta name="generator" content="docfx 2.15.5.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -68,11 +68,11 @@
             <article class="content wrap" id="_content">
               
               
-              
+              <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/IO/Reading/DICOMElementReader.cs/#L13" class="btn btn-primary pull-right mobile-hide">View Source</a>
               <h1 id="" data-uid="EvilDICOM.Core.IO.Reading.DICOMElementReader">Class DICOMElementReader
               </h1>
-              <div class="markdown level0 summary"><pre><code>Reads in DICOM elements from a DICOM object
-</code></pre></div>
+              <div class="markdown level0 summary"><p>Reads in DICOM elements from a DICOM object</p>
+</div>
               <div class="markdown level0 conceptual"></div>
               <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
               <!-- API Ad -->
@@ -85,40 +85,18 @@
                   <div class="level0"><span class="xref">System.Object</span></div>
                   <div class="level1"><span class="xref">DICOMElementReader</span></div>
               </div>
-              <div class="inheritedMembers">
-                <h5>Inherited Members</h5>
-                <div>
-                  <span class="xref">System.Object.ToString()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.Equals(System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.GetHashCode()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.GetType()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.MemberwiseClone()</span>
-                </div>
-              </div>
               <h6><strong>Namespace</strong>:EvilDICOM.Core.IO.Reading</h6>
               <h6><strong>Assembly</strong>:EvilDICOM.dll</h6>
               <h5 id="_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public class DICOMElementReader</code></pre>
+                <pre><code class="lang-csharp hljs">public class DICOMElementReader : object</code></pre>
               </div>
               <h3 id="methods">Methods
               </h3>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/IO/Reading/DICOMElementReader.cs/#L147">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.IO.Reading.DICOMElementReader.ReadAllElements(EvilDICOM.Core.IO.Reading.DICOMBinaryReader,EvilDICOM.Core.Enums.TransferSyntax)">ReadAllElements(DICOMBinaryReader, TransferSyntax)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -158,16 +136,18 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EvilDICOM.Core.Interfaces.IDICOMElement.html">IDICOMElement</a>&gt;</td>
+                    <td><span class="xref">List</span>&lt;<a class="xref" href="EvilDICOM.Core.Interfaces.IDICOMElement.html">IDICOMElement</a>&gt;</td>
                     <td></td>
                   </tr>
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/IO/Reading/DICOMElementReader.cs/#L185">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.IO.Reading.DICOMElementReader.ReadAllElementsExplicitBigEndian(EvilDICOM.Core.IO.Reading.DICOMBinaryReader)">ReadAllElementsExplicitBigEndian(DICOMBinaryReader)</h4>
-              <div class="markdown level1 summary"><pre><code>Reads and returns all elements in explicit big endian format
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Reads and returns all elements in explicit big endian format</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -201,17 +181,19 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EvilDICOM.Core.Interfaces.IDICOMElement.html">IDICOMElement</a>&gt;</td>
+                    <td><span class="xref">List</span>&lt;<a class="xref" href="EvilDICOM.Core.Interfaces.IDICOMElement.html">IDICOMElement</a>&gt;</td>
                     <td><p>DICOM elements read</p>
 </td>
                   </tr>
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/IO/Reading/DICOMElementReader.cs/#L200">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.IO.Reading.DICOMElementReader.ReadAllElementsExplicitLittleEndian(EvilDICOM.Core.IO.Reading.DICOMBinaryReader)">ReadAllElementsExplicitLittleEndian(DICOMBinaryReader)</h4>
-              <div class="markdown level1 summary"><pre><code>Reads and returns all elements in explilcit little endian format
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Reads and returns all elements in explilcit little endian format</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -245,17 +227,19 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EvilDICOM.Core.Interfaces.IDICOMElement.html">IDICOMElement</a>&gt;</td>
+                    <td><span class="xref">List</span>&lt;<a class="xref" href="EvilDICOM.Core.Interfaces.IDICOMElement.html">IDICOMElement</a>&gt;</td>
                     <td><p>DICOM elements read</p>
 </td>
                   </tr>
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/IO/Reading/DICOMElementReader.cs/#L170">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.IO.Reading.DICOMElementReader.ReadAllElementsImplicitLittleEndian(EvilDICOM.Core.IO.Reading.DICOMBinaryReader)">ReadAllElementsImplicitLittleEndian(DICOMBinaryReader)</h4>
-              <div class="markdown level1 summary"><pre><code>Reads and returns all elements in implicit little endian format
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Reads and returns all elements in implicit little endian format</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -289,17 +273,19 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EvilDICOM.Core.Interfaces.IDICOMElement.html">IDICOMElement</a>&gt;</td>
+                    <td><span class="xref">List</span>&lt;<a class="xref" href="EvilDICOM.Core.Interfaces.IDICOMElement.html">IDICOMElement</a>&gt;</td>
                     <td><p>DICOM elements read</p>
 </td>
                   </tr>
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/IO/Reading/DICOMElementReader.cs/#L85">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.IO.Reading.DICOMElementReader.ReadElementExplicitBigEndian(EvilDICOM.Core.IO.Reading.DICOMBinaryReader)">ReadElementExplicitBigEndian(DICOMBinaryReader)</h4>
-              <div class="markdown level1 summary"><pre><code>Reads and returns the next DICOM element starting at the current location in the DICOM binary reader
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Reads and returns the next DICOM element starting at the current location in the DICOM binary reader</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -340,10 +326,12 @@
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/IO/Reading/DICOMElementReader.cs/#L20">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.IO.Reading.DICOMElementReader.ReadElementExplicitLittleEndian(EvilDICOM.Core.IO.Reading.DICOMBinaryReader)">ReadElementExplicitLittleEndian(DICOMBinaryReader)</h4>
-              <div class="markdown level1 summary"><pre><code>Reads and returns the next DICOM element starting at the current location in the DICOM binary reader
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Reads and returns the next DICOM element starting at the current location in the DICOM binary reader</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -384,10 +372,12 @@
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/IO/Reading/DICOMElementReader.cs/#L46">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.IO.Reading.DICOMElementReader.ReadElementImplicitLittleEndian(EvilDICOM.Core.IO.Reading.DICOMBinaryReader)">ReadElementImplicitLittleEndian(DICOMBinaryReader)</h4>
-              <div class="markdown level1 summary"><pre><code>Reads and returns the next DICOM element starting at the current location in the DICOM binary reader
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Reads and returns the next DICOM element starting at the current location in the DICOM binary reader</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -428,7 +418,9 @@
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/IO/Reading/DICOMElementReader.cs/#L127">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.IO.Reading.DICOMElementReader.SkipElementExplicitBigEndian(EvilDICOM.Core.IO.Reading.DICOMBinaryReader)">SkipElementExplicitBigEndian(DICOMBinaryReader)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -454,7 +446,9 @@
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/IO/Reading/DICOMElementReader.cs/#L96">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.IO.Reading.DICOMElementReader.SkipElementExplicitLittleEndian(EvilDICOM.Core.IO.Reading.DICOMBinaryReader)">SkipElementExplicitLittleEndian(DICOMBinaryReader)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -480,7 +474,9 @@
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/IO/Reading/DICOMElementReader.cs/#L112">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.IO.Reading.DICOMElementReader.SkipElementImplicitLittleEndian(EvilDICOM.Core.IO.Reading.DICOMBinaryReader)">SkipElementImplicitLittleEndian(DICOMBinaryReader)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>

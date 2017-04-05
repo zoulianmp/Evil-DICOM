@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DICOMObject
    ">
-    <meta name="generator" content="docfx 2.13.1.0">
+    <meta name="generator" content="docfx 2.15.5.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -68,12 +68,12 @@
             <article class="content wrap" id="_content">
               
               
-              
+              <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L23" class="btn btn-primary pull-right mobile-hide">View Source</a>
               <h1 id="" data-uid="EvilDICOM.Core.DICOMObject">Class DICOMObject
               </h1>
-              <div class="markdown level0 summary"><pre><code>The DICOM object is a container for DICOM elements. It contains methods for finding elements easily from within the
-structure.
-</code></pre></div>
+              <div class="markdown level0 summary"><p>The DICOM object is a container for DICOM elements. It contains methods for finding elements easily from within the
+structure.</p>
+</div>
               <div class="markdown level0 conceptual"></div>
               <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
               <!-- API Ad -->
@@ -86,50 +86,33 @@ structure.
                   <div class="level0"><span class="xref">System.Object</span></div>
                   <div class="level1"><span class="xref">DICOMObject</span></div>
               </div>
-              <div class="inheritedMembers">
-                <h5>Inherited Members</h5>
-                <div>
-                  <span class="xref">System.Object.Equals(System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.GetHashCode()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.GetType()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.MemberwiseClone()</span>
-                </div>
-              </div>
               <h6><strong>Namespace</strong>:EvilDICOM.Core</h6>
               <h6><strong>Assembly</strong>:EvilDICOM.dll</h6>
               <h5 id="_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public class DICOMObject</code></pre>
+                <pre><code class="lang-csharp hljs">public class DICOMObject : object</code></pre>
               </div>
               <h3 id="constructors">Constructors
               </h3>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L30">View Source</a>
+              </span>
               <h4 id="constructors" data-uid="EvilDICOM.Core.DICOMObject.#ctor">DICOMObject()</h4>
-              <div class="markdown level1 summary"><pre><code>Constructor no parameters
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Constructor no parameters</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
                 <pre><code class="lang-csharp hljs">public DICOMObject()</code></pre>
               </div>
               
-              
-              <h4 id="constructors" data-uid="EvilDICOM.Core.DICOMObject.#ctor(System.Collections.Generic.List{EvilDICOM.Core.Interfaces.IDICOMElement})">DICOMObject(List&lt;IDICOMElement&gt;)</h4>
-              <div class="markdown level1 summary"><pre><code>Contructor with elements
-</code></pre></div>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L39">View Source</a>
+              </span>
+              <h4 id="constructors" data-uid="EvilDICOM.Core.DICOMObject.#ctor(List{EvilDICOM.Core.Interfaces.IDICOMElement})">DICOMObject(List&lt;IDICOMElement&gt;)</h4>
+              <div class="markdown level1 summary"><p>Contructor with elements</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -146,7 +129,7 @@ structure.
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EvilDICOM.Core.Interfaces.IDICOMElement.html">IDICOMElement</a>&gt;</td>
+                    <td><span class="xref">List</span>&lt;<a class="xref" href="EvilDICOM.Core.Interfaces.IDICOMElement.html">IDICOMElement</a>&gt;</td>
                     <td><em>elements</em></td>
                     <td><p>a list of elements to be included in the object</p>
 </td>
@@ -156,10 +139,12 @@ structure.
               <h3 id="properties">Properties
               </h3>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L57">View Source</a>
+              </span>
               <h4 id="properties" data-uid="EvilDICOM.Core.DICOMObject.AllElements">AllElements</h4>
-              <div class="markdown level1 summary"><pre><code>The list of all DICOM elements at every level in the DICOM structure (includes sub-elements of sequences)
-</code></pre></div>
+              <div class="markdown level1 summary"><p>The list of all DICOM elements at every level in the DICOM structure (includes sub-elements of sequences)</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -175,16 +160,18 @@ structure.
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EvilDICOM.Core.Interfaces.IDICOMElement.html">IDICOMElement</a>&gt;</td>
+                    <td><span class="xref">List</span>&lt;<a class="xref" href="EvilDICOM.Core.Interfaces.IDICOMElement.html">IDICOMElement</a>&gt;</td>
                     <td></td>
                   </tr>
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L48">View Source</a>
+              </span>
               <h4 id="properties" data-uid="EvilDICOM.Core.DICOMObject.Elements">Elements</h4>
-              <div class="markdown level1 summary"><pre><code>The list of first level DICOM elements inside this DICOM object
-</code></pre></div>
+              <div class="markdown level1 summary"><p>The list of first level DICOM elements inside this DICOM object</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -200,16 +187,18 @@ structure.
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EvilDICOM.Core.Interfaces.IDICOMElement.html">IDICOMElement</a>&gt;</td>
+                    <td><span class="xref">List</span>&lt;<a class="xref" href="EvilDICOM.Core.Interfaces.IDICOMElement.html">IDICOMElement</a>&gt;</td>
                     <td></td>
                   </tr>
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L462">View Source</a>
+              </span>
               <h4 id="properties" data-uid="EvilDICOM.Core.DICOMObject.PixelStream">PixelStream</h4>
-              <div class="markdown level1 summary"><pre><code>Grabs the pixel data bytes and sends it as a stream. Returns null if no pixel data element is found.
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Grabs the pixel data bytes and sends it as a stream. Returns null if no pixel data element is found.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -225,13 +214,15 @@ structure.
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.IO.Stream</span></td>
+                    <td><span class="xref">Stream</span></td>
                     <td></td>
                   </tr>
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L575">View Source</a>
+              </span>
               <h4 id="properties" data-uid="EvilDICOM.Core.DICOMObject.SOPClass">SOPClass</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -257,10 +248,12 @@ structure.
               <h3 id="methods">Methods
               </h3>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L85">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.Add(EvilDICOM.Core.Interfaces.IDICOMElement)">Add(IDICOMElement)</h4>
-              <div class="markdown level1 summary"><pre><code>Adds an element to the DICOM object
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Adds an element to the DICOM object</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -285,10 +278,12 @@ structure.
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L229">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.FindAll(EvilDICOM.Core.Element.Tag)">FindAll(Tag)</h4>
-              <div class="markdown level1 summary"><pre><code>Finds all DICOM elements that match a certain tag
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Finds all DICOM elements that match a certain tag</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -322,19 +317,21 @@ structure.
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EvilDICOM.Core.Interfaces.IDICOMElement.html">IDICOMElement</a>&gt;</td>
+                    <td><span class="xref">List</span>&lt;<a class="xref" href="EvilDICOM.Core.Interfaces.IDICOMElement.html">IDICOMElement</a>&gt;</td>
                     <td><p>a list of all elements that meet the search criteria</p>
 </td>
                   </tr>
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L284">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.FindAll(EvilDICOM.Core.Element.Tag[])">FindAll(Tag[])</h4>
-              <div class="markdown level1 summary"><pre><code>Finds all DICOM elements that are embedded in the DICOM structure in some particular location. This location
+              <div class="markdown level1 summary"><p>Finds all DICOM elements that are embedded in the DICOM structure in some particular location. This location
 is defined by descending tags from the outer most elements to the element. It is not necessary to include every
-tag in the descending &quot;treelike&quot; structure. Branches can be skipped.
-</code></pre></div>
+tag in the descending &quot;treelike&quot; structure. Branches can be skipped.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -353,9 +350,9 @@ tag in the descending &quot;treelike&quot; structure. Branches can be skipped.
                   <tr>
                     <td><a class="xref" href="EvilDICOM.Core.Element.Tag.html">Tag</a>[]</td>
                     <td><em>descendingTags</em></td>
-                    <td><pre><code>a tag array containing in order the tags from the outer most elements to the element being
-searched for
-</code></pre></td>
+                    <td><p>a tag array containing in order the tags from the outer most elements to the element being
+searched for</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -369,17 +366,19 @@ searched for
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EvilDICOM.Core.Interfaces.IDICOMElement.html">IDICOMElement</a>&gt;</td>
+                    <td><span class="xref">List</span>&lt;<a class="xref" href="EvilDICOM.Core.Interfaces.IDICOMElement.html">IDICOMElement</a>&gt;</td>
                     <td><p>a list of all elements that meet the search criteria</p>
 </td>
                   </tr>
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L161">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.FindAll(EvilDICOM.Core.Enums.VR)">FindAll(VR)</h4>
-              <div class="markdown level1 summary"><pre><code>Finds all DICOM elements that match a VR type
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Finds all DICOM elements that match a VR type</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -413,17 +412,19 @@ searched for
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EvilDICOM.Core.Interfaces.IDICOMElement.html">IDICOMElement</a>&gt;</td>
+                    <td><span class="xref">List</span>&lt;<a class="xref" href="EvilDICOM.Core.Interfaces.IDICOMElement.html">IDICOMElement</a>&gt;</td>
                     <td><p>a list of all elements that meet the search criteria</p>
 </td>
                   </tr>
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L219">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.FindAll(System.String)">FindAll(String)</h4>
-              <div class="markdown level1 summary"><pre><code>Finds all DICOM elements that match a certain tag
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Finds all DICOM elements that match a certain tag</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -457,19 +458,21 @@ searched for
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EvilDICOM.Core.Interfaces.IDICOMElement.html">IDICOMElement</a>&gt;</td>
+                    <td><span class="xref">List</span>&lt;<a class="xref" href="EvilDICOM.Core.Interfaces.IDICOMElement.html">IDICOMElement</a>&gt;</td>
                     <td><p>a list of all elements that meet the search criteria</p>
 </td>
                   </tr>
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L244">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.FindAll(System.String[])">FindAll(String[])</h4>
-              <div class="markdown level1 summary"><pre><code>Finds all DICOM elements that are embedded in the DICOM structure in some particular location. This location
+              <div class="markdown level1 summary"><p>Finds all DICOM elements that are embedded in the DICOM structure in some particular location. This location
 is defined by descending tags from the outer most elements to the element. It is not necessary to include every
-tag in the descending &quot;treelike&quot; structure. Branches can be skipped.
-</code></pre></div>
+tag in the descending &quot;treelike&quot; structure. Branches can be skipped.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -488,9 +491,9 @@ tag in the descending &quot;treelike&quot; structure. Branches can be skipped.
                   <tr>
                     <td><span class="xref">System.String</span>[]</td>
                     <td><em>descendingTags</em></td>
-                    <td><pre><code>a string array containing in order the tags from the outer most elements to the element
-being searched for
-</code></pre></td>
+                    <td><p>a string array containing in order the tags from the outer most elements to the element
+being searched for</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -504,17 +507,19 @@ being searched for
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EvilDICOM.Core.Interfaces.IDICOMElement.html">IDICOMElement</a>&gt;</td>
+                    <td><span class="xref">List</span>&lt;<a class="xref" href="EvilDICOM.Core.Interfaces.IDICOMElement.html">IDICOMElement</a>&gt;</td>
                     <td><p>a list of all elements that meet the search criteria</p>
 </td>
                   </tr>
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L205">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.FindAll``1">FindAll&lt;T&gt;()</h4>
-              <div class="markdown level1 summary"><pre><code>Finds all DICOM elements that match an element type
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Finds all DICOM elements that match an element type</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -530,7 +535,7 @@ being searched for
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Collections.Generic.List</span>&lt;T&gt;</td>
+                    <td><span class="xref">List</span>&lt;T&gt;</td>
                     <td><p>a list of all elements that are strongly typed</p>
 </td>
                   </tr>
@@ -553,10 +558,12 @@ being searched for
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L306">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.FindFirst(EvilDICOM.Core.Element.Tag)">FindFirst(Tag)</h4>
-              <div class="markdown level1 summary"><pre><code>Finds the first element in the entire DICOM structure that has a certain tag
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Finds the first element in the entire DICOM structure that has a certain tag</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -597,10 +604,12 @@ being searched for
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L295">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.FindFirst(System.String)">FindFirst(String)</h4>
-              <div class="markdown level1 summary"><pre><code>Finds the first element in the entire DICOM structure that has a certain tag
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Finds the first element in the entire DICOM structure that has a certain tag</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -641,7 +650,9 @@ being searched for
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L538">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.FromXML(System.String)">FromXML(String)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -682,7 +693,9 @@ being searched for
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L565">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.GetBytes(EvilDICOM.Core.IO.Writing.DICOMWriteSettings)">GetBytes(DICOMWriteSettings)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -723,7 +736,9 @@ being searched for
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L479">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.GetSelector">GetSelector()</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -747,11 +762,13 @@ being searched for
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L173">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.GetUnknownTagAs``1(EvilDICOM.Core.Element.Tag)">GetUnknownTagAs&lt;T&gt;(Tag)</h4>
-              <div class="markdown level1 summary"><pre><code>Returns elements of a certain tag that are of the unknown VR type (because they are not
-in the DICOM dictionary) and reads them as the specified VR type
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Returns elements of a certain tag that are of the unknown VR type (because they are not
+in the DICOM dictionary) and reads them as the specified VR type</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -785,7 +802,7 @@ in the DICOM dictionary) and reads them as the specified VR type
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Collections.Generic.List</span>&lt;T&gt;</td>
+                    <td><span class="xref">List</span>&lt;T&gt;</td>
                     <td><p>the unknown elements strongly typed to T</p>
 </td>
                   </tr>
@@ -808,11 +825,13 @@ in the DICOM dictionary) and reads them as the specified VR type
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L195">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.GetUnknownTagAs``1(System.String)">GetUnknownTagAs&lt;T&gt;(String)</h4>
-              <div class="markdown level1 summary"><pre><code>Returns elements of a certain tag that are of the unknown VR type (because they are not
-in the DICOM dictionary) and reads them as the specified VR type
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Returns elements of a certain tag that are of the unknown VR type (because they are not
+in the DICOM dictionary) and reads them as the specified VR type</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -846,7 +865,7 @@ in the DICOM dictionary) and reads them as the specified VR type
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Collections.Generic.List</span>&lt;T&gt;</td>
+                    <td><span class="xref">List</span>&lt;T&gt;</td>
                     <td><p>the unknown elements strongly typed to T</p>
 </td>
                   </tr>
@@ -869,10 +888,12 @@ in the DICOM dictionary) and reads them as the specified VR type
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L528">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.Read(System.Byte[],EvilDICOM.Core.Enums.TransferSyntax)">Read(Byte[], TransferSyntax)</h4>
-              <div class="markdown level1 summary"><pre><code>Reads a DICOM file from a byte array
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Reads a DICOM file from a byte array</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -918,10 +939,12 @@ in the DICOM dictionary) and reads them as the specified VR type
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L499">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.Read(System.String,EvilDICOM.Core.Enums.TransferSyntax)">Read(String, TransferSyntax)</h4>
-              <div class="markdown level1 summary"><pre><code>Reads a DICOM file from a path
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Reads a DICOM file from a path</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -971,10 +994,67 @@ in the DICOM dictionary) and reads them as the specified VR type
               <pre><code>var dcm = DICOMObject.Read("mydcm.dcm");</code></pre>
 
               
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L516">View Source</a>
+              </span>
+              <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.ReadAsync(System.String,EvilDICOM.Core.Enums.TransferSyntax)">ReadAsync(String, TransferSyntax)</h4>
+              <div class="markdown level1 summary"><p>Reads a DICOM file from a path</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Task&lt;DICOMObject&gt; ReadAsync(string filePath, TransferSyntax trySyntax = TransferSyntax.IMPLICIT_VR_LITTLE_ENDIAN)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>filePath</em></td>
+                    <td><p>the path to the file</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="EvilDICOM.Core.Enums.TransferSyntax.html">TransferSyntax</a></td>
+                    <td><em>trySyntax</em></td>
+                    <td><p>the transfer syntax to use in case there is no metadata explicitly included</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Task</span>&lt;<a class="xref" href="EvilDICOM.Core.DICOMObject.html">DICOMObject</a>&gt;</td>
+                    <td><p>the DICOM Object</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="methods_examples">Examples</h5>
+              <pre><code>var dcm = DICOMObject.Read("mydcm.dcm");</code></pre>
+
               
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L335">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.Remove(EvilDICOM.Core.Element.Tag)">Remove(Tag)</h4>
-              <div class="markdown level1 summary"><pre><code>Removes the element with the tag from the DICOM object
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Removes the element with the tag from the DICOM object</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -999,10 +1079,12 @@ in the DICOM dictionary) and reads them as the specified VR type
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L315">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.Remove(System.String)">Remove(String)</h4>
-              <div class="markdown level1 summary"><pre><code>Removes the element with the tag from the DICOM object
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Removes the element with the tag from the DICOM object</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -1027,7 +1109,9 @@ in the DICOM dictionary) and reads them as the specified VR type
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L608">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.Replace(EvilDICOM.Core.Element.AbstractElement{EvilDICOM.Core.DICOMObject})">Replace(AbstractElement&lt;DICOMObject&gt;)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -1068,7 +1152,9 @@ in the DICOM dictionary) and reads them as the specified VR type
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L613">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.Replace(EvilDICOM.Core.Element.AbstractElement{EvilDICOM.Core.Element.Tag})">Replace(AbstractElement&lt;Tag&gt;)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -1109,7 +1195,9 @@ in the DICOM dictionary) and reads them as the specified VR type
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L638">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.Replace(EvilDICOM.Core.Element.AbstractElement{System.Byte})">Replace(AbstractElement&lt;Byte&gt;)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -1150,7 +1238,9 @@ in the DICOM dictionary) and reads them as the specified VR type
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L598">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.Replace(EvilDICOM.Core.Element.AbstractElement{System.Double})">Replace(AbstractElement&lt;Double&gt;)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -1191,7 +1281,9 @@ in the DICOM dictionary) and reads them as the specified VR type
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L633">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.Replace(EvilDICOM.Core.Element.AbstractElement{System.Int16})">Replace(AbstractElement&lt;Int16&gt;)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -1232,7 +1324,9 @@ in the DICOM dictionary) and reads them as the specified VR type
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L623">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.Replace(EvilDICOM.Core.Element.AbstractElement{System.Int32})">Replace(AbstractElement&lt;Int32&gt;)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -1273,13 +1367,15 @@ in the DICOM dictionary) and reads them as the specified VR type
                 </tbody>
               </table>
               
-              
-              <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.Replace(EvilDICOM.Core.Element.AbstractElement{System.Nullable{System.DateTime}})">Replace(AbstractElement&lt;Nullable&lt;DateTime&gt;&gt;)</h4>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L643">View Source</a>
+              </span>
+              <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.Replace(EvilDICOM.Core.Element.AbstractElement{System.Nullable{System.DateTime}})">Replace(AbstractElement&lt;Nullable&lt;System.DateTime&gt;&gt;)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public bool Replace(AbstractElement&lt;DateTime? &gt; element)</code></pre>
+                <pre><code class="lang-csharp hljs">public bool Replace(AbstractElement&lt;System.DateTime? &gt; element)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -1314,7 +1410,9 @@ in the DICOM dictionary) and reads them as the specified VR type
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L593">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.Replace(EvilDICOM.Core.Element.AbstractElement{System.Single})">Replace(AbstractElement&lt;Single&gt;)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -1355,7 +1453,9 @@ in the DICOM dictionary) and reads them as the specified VR type
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L603">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.Replace(EvilDICOM.Core.Element.AbstractElement{System.String})">Replace(AbstractElement&lt;String&gt;)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -1396,7 +1496,9 @@ in the DICOM dictionary) and reads them as the specified VR type
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L628">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.Replace(EvilDICOM.Core.Element.AbstractElement{System.UInt16})">Replace(AbstractElement&lt;UInt16&gt;)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -1437,7 +1539,9 @@ in the DICOM dictionary) and reads them as the specified VR type
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L618">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.Replace(EvilDICOM.Core.Element.AbstractElement{System.UInt32})">Replace(AbstractElement&lt;UInt32&gt;)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -1478,10 +1582,12 @@ in the DICOM dictionary) and reads them as the specified VR type
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L361">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.Replace(EvilDICOM.Core.Interfaces.IDICOMElement)">Replace(IDICOMElement)</h4>
-              <div class="markdown level1 summary"><pre><code>Replaces the underlying DICOM element with input DICOM element of the same tag
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Replaces the underlying DICOM element with input DICOM element of the same tag</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -1522,7 +1628,9 @@ in the DICOM dictionary) and reads them as the specified VR type
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L405">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.ReplaceOrAdd(EvilDICOM.Core.Element.AbstractElement{EvilDICOM.Core.DICOMObject})">ReplaceOrAdd(AbstractElement&lt;DICOMObject&gt;)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -1548,7 +1656,9 @@ in the DICOM dictionary) and reads them as the specified VR type
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L410">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.ReplaceOrAdd(EvilDICOM.Core.Element.AbstractElement{EvilDICOM.Core.Element.Tag})">ReplaceOrAdd(AbstractElement&lt;Tag&gt;)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -1574,7 +1684,9 @@ in the DICOM dictionary) and reads them as the specified VR type
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L445">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.ReplaceOrAdd(EvilDICOM.Core.Element.AbstractElement{System.Byte})">ReplaceOrAdd(AbstractElement&lt;Byte&gt;)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -1600,7 +1712,9 @@ in the DICOM dictionary) and reads them as the specified VR type
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L395">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.ReplaceOrAdd(EvilDICOM.Core.Element.AbstractElement{System.Double})">ReplaceOrAdd(AbstractElement&lt;Double&gt;)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -1626,7 +1740,9 @@ in the DICOM dictionary) and reads them as the specified VR type
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L430">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.ReplaceOrAdd(EvilDICOM.Core.Element.AbstractElement{System.Int16})">ReplaceOrAdd(AbstractElement&lt;Int16&gt;)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -1652,7 +1768,9 @@ in the DICOM dictionary) and reads them as the specified VR type
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L420">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.ReplaceOrAdd(EvilDICOM.Core.Element.AbstractElement{System.Int32})">ReplaceOrAdd(AbstractElement&lt;Int32&gt;)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -1678,13 +1796,15 @@ in the DICOM dictionary) and reads them as the specified VR type
                 </tbody>
               </table>
               
-              
-              <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.ReplaceOrAdd(EvilDICOM.Core.Element.AbstractElement{System.Nullable{System.DateTime}})">ReplaceOrAdd(AbstractElement&lt;Nullable&lt;DateTime&gt;&gt;)</h4>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L450">View Source</a>
+              </span>
+              <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.ReplaceOrAdd(EvilDICOM.Core.Element.AbstractElement{System.Nullable{System.DateTime}})">ReplaceOrAdd(AbstractElement&lt;Nullable&lt;System.DateTime&gt;&gt;)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void ReplaceOrAdd(AbstractElement&lt;DateTime? &gt; element)</code></pre>
+                <pre><code class="lang-csharp hljs">public void ReplaceOrAdd(AbstractElement&lt;System.DateTime? &gt; element)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -1704,7 +1824,9 @@ in the DICOM dictionary) and reads them as the specified VR type
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L435">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.ReplaceOrAdd(EvilDICOM.Core.Element.AbstractElement{System.Nullable{System.Double}})">ReplaceOrAdd(AbstractElement&lt;Nullable&lt;Double&gt;&gt;)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -1730,7 +1852,9 @@ in the DICOM dictionary) and reads them as the specified VR type
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L440">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.ReplaceOrAdd(EvilDICOM.Core.Element.AbstractElement{System.Nullable{System.Single}})">ReplaceOrAdd(AbstractElement&lt;Nullable&lt;Single&gt;&gt;)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -1756,7 +1880,9 @@ in the DICOM dictionary) and reads them as the specified VR type
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L390">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.ReplaceOrAdd(EvilDICOM.Core.Element.AbstractElement{System.Single})">ReplaceOrAdd(AbstractElement&lt;Single&gt;)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -1782,7 +1908,9 @@ in the DICOM dictionary) and reads them as the specified VR type
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L400">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.ReplaceOrAdd(EvilDICOM.Core.Element.AbstractElement{System.String})">ReplaceOrAdd(AbstractElement&lt;String&gt;)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -1808,7 +1936,9 @@ in the DICOM dictionary) and reads them as the specified VR type
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L425">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.ReplaceOrAdd(EvilDICOM.Core.Element.AbstractElement{System.UInt16})">ReplaceOrAdd(AbstractElement&lt;UInt16&gt;)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -1834,7 +1964,9 @@ in the DICOM dictionary) and reads them as the specified VR type
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L415">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.ReplaceOrAdd(EvilDICOM.Core.Element.AbstractElement{System.UInt32})">ReplaceOrAdd(AbstractElement&lt;UInt32&gt;)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -1860,11 +1992,13 @@ in the DICOM dictionary) and reads them as the specified VR type
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L375">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.ReplaceOrAdd``1(EvilDICOM.Core.Element.AbstractElement{``0})">ReplaceOrAdd&lt;T&gt;(AbstractElement&lt;T&gt;)</h4>
-              <div class="markdown level1 summary"><pre><code>Replaces a current instance of the DICOM element in the DICOM object. If the object does not exist, this method
-will add it to the object.
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Replaces a current instance of the DICOM element in the DICOM object. If the object does not exist, this method
+will add it to the object.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -1905,7 +2039,9 @@ will add it to the object.
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L383">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.ToString">ToString()</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -1928,10 +2064,10 @@ will add it to the object.
                   </tr>
                 </tbody>
               </table>
-              <h5 class="overrides">Overrides</h5>
-              <div><span class="xref">System.Object.ToString()</span></div>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L560">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.ToXML">ToXML()</h4>
               <div class="markdown level1 summary"><p>Writes the DICOM Object to an XML string for visualization and manipluation. Use FromXML() to get back.</p>
 </div>
@@ -1956,11 +2092,13 @@ will add it to the object.
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L99">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.TryGetDataValue``1(EvilDICOM.Core.Element.Tag,System.Object)">TryGetDataValue&lt;T&gt;(Tag, Object)</h4>
-              <div class="markdown level1 summary"><pre><code>Searches for a specific element. If it is found, it returns the data from the element. Otherwise,
-it will return a provided default value for the element.
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Searches for a specific element. If it is found, it returns the data from the element. Otherwise,
+it will return a provided default value for the element.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -2022,11 +2160,13 @@ it will return a provided default value for the element.
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L126">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.TrySetDataValue``1(EvilDICOM.Core.Element.Tag,``0)">TrySetDataValue&lt;T&gt;(Tag, T)</h4>
-              <div class="markdown level1 summary"><pre><code>Searches for a specific element (first instance). If it is found, it sets the data for this element and returns
-true, otherwise returns false;
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Searches for a specific element (first instance). If it is found, it sets the data for this element and returns
+true, otherwise returns false;</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -2089,11 +2229,13 @@ true, otherwise returns false;
                 </tbody>
               </table>
               
-              
-              <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.TrySetDataValue``1(EvilDICOM.Core.Element.Tag,System.Collections.Generic.List{``0})">TrySetDataValue&lt;T&gt;(Tag, List&lt;T&gt;)</h4>
-              <div class="markdown level1 summary"><pre><code>Searches for a specific element (first instance). If it is found, it sets the data for this element and returns
-true, otherwise returns false;
-</code></pre></div>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L145">View Source</a>
+              </span>
+              <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.TrySetDataValue``1(EvilDICOM.Core.Element.Tag,List{``0})">TrySetDataValue&lt;T&gt;(Tag, List&lt;T&gt;)</h4>
+              <div class="markdown level1 summary"><p>Searches for a specific element (first instance). If it is found, it sets the data for this element and returns
+true, otherwise returns false;</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -2116,7 +2258,7 @@ true, otherwise returns false;
 </td>
                   </tr>
                   <tr>
-                    <td><span class="xref">System.Collections.Generic.List</span>&lt;T&gt;</td>
+                    <td><span class="xref">List</span>&lt;T&gt;</td>
                     <td><em>data</em></td>
                     <td><p>the data to set in this element</p>
 </td>
@@ -2156,7 +2298,9 @@ true, otherwise returns false;
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObject.cs/#L550">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObject.Write(System.String,EvilDICOM.Core.IO.Writing.DICOMWriteSettings)">Write(String, DICOMWriteSettings)</h4>
               <div class="markdown level1 summary"><p>Writes DICOM object to a file</p>
 </div>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class VRReader
    ">
-    <meta name="generator" content="docfx 2.13.1.0">
+    <meta name="generator" content="docfx 2.15.5.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -68,7 +68,7 @@
             <article class="content wrap" id="_content">
               
               
-              
+              <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/IO/Reading/VRReader.cs/#L9" class="btn btn-primary pull-right mobile-hide">View Source</a>
               <h1 id="" data-uid="EvilDICOM.Core.IO.Reading.VRReader">Class VRReader
               </h1>
               <div class="markdown level0 summary"></div>
@@ -84,46 +84,67 @@
                   <div class="level0"><span class="xref">System.Object</span></div>
                   <div class="level1"><span class="xref">VRReader</span></div>
               </div>
-              <div class="inheritedMembers">
-                <h5>Inherited Members</h5>
-                <div>
-                  <span class="xref">System.Object.ToString()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.Equals(System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.GetHashCode()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.GetType()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.MemberwiseClone()</span>
-                </div>
-              </div>
               <h6><strong>Namespace</strong>:EvilDICOM.Core.IO.Reading</h6>
               <h6><strong>Assembly</strong>:EvilDICOM.dll</h6>
               <h5 id="_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public class VRReader</code></pre>
+                <pre><code class="lang-csharp hljs">public class VRReader : object</code></pre>
               </div>
               <h3 id="methods">Methods
               </h3>
               
-              
-              <h4 id="methods" data-uid="EvilDICOM.Core.IO.Reading.VRReader.Read(EvilDICOM.Core.IO.Reading.DICOMBinaryReader)">Read(DICOMBinaryReader)</h4>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/IO/Reading/VRReader.cs/#L22">View Source</a>
+              </span>
+              <h4 id="methods" data-uid="EvilDICOM.Core.IO.Reading.VRReader.PeekVR(EvilDICOM.Core.IO.Reading.DICOMBinaryReader)">PeekVR(DICOMBinaryReader)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public static VR Read(DICOMBinaryReader dr)</code></pre>
+                <pre><code class="lang-csharp hljs">public static VR PeekVR(DICOMBinaryReader dr)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="EvilDICOM.Core.IO.Reading.DICOMBinaryReader.html">DICOMBinaryReader</a></td>
+                    <td><em>dr</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="EvilDICOM.Core.Enums.VR.html">VR</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/IO/Reading/VRReader.cs/#L11">View Source</a>
+              </span>
+              <h4 id="methods" data-uid="EvilDICOM.Core.IO.Reading.VRReader.ReadVR(EvilDICOM.Core.IO.Reading.DICOMBinaryReader)">ReadVR(DICOMBinaryReader)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static VR ReadVR(DICOMBinaryReader dr)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">

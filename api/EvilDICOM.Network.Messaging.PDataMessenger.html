@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class PDataMessenger
    ">
-    <meta name="generator" content="docfx 2.13.1.0">
+    <meta name="generator" content="docfx 2.15.5.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -68,7 +68,7 @@
             <article class="content wrap" id="_content">
               
               
-              
+              <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Network/Messaging/PDataMessenger.cs/#L17" class="btn btn-primary pull-right mobile-hide">View Source</a>
               <h1 id="" data-uid="EvilDICOM.Network.Messaging.PDataMessenger">Class PDataMessenger
               </h1>
               <div class="markdown level0 summary"></div>
@@ -84,46 +84,80 @@
                   <div class="level0"><span class="xref">System.Object</span></div>
                   <div class="level1"><span class="xref">PDataMessenger</span></div>
               </div>
-              <div class="inheritedMembers">
-                <h5>Inherited Members</h5>
-                <div>
-                  <span class="xref">System.Object.ToString()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.Equals(System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.GetHashCode()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.GetType()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.MemberwiseClone()</span>
-                </div>
-              </div>
               <h6><strong>Namespace</strong>:EvilDICOM.Network.Messaging</h6>
               <h6><strong>Assembly</strong>:EvilDICOM.dll</h6>
               <h5 id="_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public class PDataMessenger</code></pre>
+                <pre><code class="lang-csharp hljs">public class PDataMessenger : object</code></pre>
               </div>
               <h3 id="methods">Methods
               </h3>
               
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Network/Messaging/PDataMessenger.cs/#L70">View Source</a>
+              </span>
+              <h4 id="methods" data-uid="EvilDICOM.Network.Messaging.PDataMessenger.GetChunks(EvilDICOM.Core.DICOMObject,System.Int32,EvilDICOM.Network.PDUs.Items.PresentationContext)">GetChunks(DICOMObject, Int32, PresentationContext)</h4>
+              <div class="markdown level1 summary"><p>Splits the DICOM object into chunks that are within the max PDU size</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static List&lt;byte[]&gt; GetChunks(DICOMObject dicomObject, int maxPduSize, PresentationContext pc)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="EvilDICOM.Core.DICOMObject.html">DICOMObject</a></td>
+                    <td><em>dicomObject</em></td>
+                    <td><p>the DICOM objec to be split</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><em>maxPduSize</em></td>
+                    <td><p>the max length (in bytes) for a PDU</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="EvilDICOM.Network.PDUs.Items.PresentationContext.html">PresentationContext</a></td>
+                    <td><em>pc</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">List</span>&lt;<span class="xref">System.Byte</span>[]&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
               
-              <h4 id="methods" data-uid="EvilDICOM.Network.Messaging.PDataMessenger.GetPDataTFs(EvilDICOM.Network.DIMSE.AbstractDIMSEBase,EvilDICOM.Network.Association,EvilDICOM.Network.PDUs.Items.PresentationContext)">GetPDataTFs(AbstractDIMSEBase, Association, PresentationContext)</h4>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Network/Messaging/PDataMessenger.cs/#L44">View Source</a>
+              </span>
+              <h4 id="methods" data-uid="EvilDICOM.Network.Messaging.PDataMessenger.GetPDataTFs(EvilDICOM.Network.DIMSE.AbstractDIMSEBase,EvilDICOM.Network.PDUs.Items.PresentationContext,System.Int32)">GetPDataTFs(AbstractDIMSEBase, PresentationContext, Int32)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public static List&lt;PDataTF&gt; GetPDataTFs(AbstractDIMSEBase dimse, Association asc, PresentationContext pContext = null)</code></pre>
+                <pre><code class="lang-csharp hljs">public static List&lt;PDataTF&gt; GetPDataTFs(AbstractDIMSEBase dimse, PresentationContext pContext, int maxPDULength = 16384)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -141,13 +175,13 @@
                     <td></td>
                   </tr>
                   <tr>
-                    <td><a class="xref" href="EvilDICOM.Network.Association.html">Association</a></td>
-                    <td><em>asc</em></td>
+                    <td><a class="xref" href="EvilDICOM.Network.PDUs.Items.PresentationContext.html">PresentationContext</a></td>
+                    <td><em>pContext</em></td>
                     <td></td>
                   </tr>
                   <tr>
-                    <td><a class="xref" href="EvilDICOM.Network.PDUs.Items.PresentationContext.html">PresentationContext</a></td>
-                    <td><em>pContext</em></td>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><em>maxPDULength</em></td>
                     <td></td>
                   </tr>
                 </tbody>
@@ -162,13 +196,15 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EvilDICOM.Network.PDUs.PDataTF.html">PDataTF</a>&gt;</td>
+                    <td><span class="xref">List</span>&lt;<a class="xref" href="EvilDICOM.Network.PDUs.PDataTF.html">PDataTF</a>&gt;</td>
                     <td></td>
                   </tr>
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Network/Messaging/PDataMessenger.cs/#L19">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Network.Messaging.PDataMessenger.Send(EvilDICOM.Network.DIMSE.AbstractDIMSEBase,EvilDICOM.Network.Association,EvilDICOM.Network.PDUs.Items.PresentationContext)">Send(AbstractDIMSEBase, Association, PresentationContext)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>

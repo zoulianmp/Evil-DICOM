@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DICOMObjectWrapper
    ">
-    <meta name="generator" content="docfx 2.13.1.0">
+    <meta name="generator" content="docfx 2.15.5.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -68,7 +68,7 @@
             <article class="content wrap" id="_content">
               
               
-              
+              <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObjectWrapper.cs/#L7" class="btn btn-primary pull-right mobile-hide">View Source</a>
               <h1 id="" data-uid="EvilDICOM.Core.DICOMObjectWrapper">Class DICOMObjectWrapper
               </h1>
               <div class="markdown level0 summary"></div>
@@ -84,40 +84,18 @@
                   <div class="level0"><span class="xref">System.Object</span></div>
                   <div class="level1"><span class="xref">DICOMObjectWrapper</span></div>
               </div>
-              <div class="inheritedMembers">
-                <h5>Inherited Members</h5>
-                <div>
-                  <span class="xref">System.Object.ToString()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.Equals(System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.GetHashCode()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.GetType()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.MemberwiseClone()</span>
-                </div>
-              </div>
               <h6><strong>Namespace</strong>:EvilDICOM.Core</h6>
               <h6><strong>Assembly</strong>:EvilDICOM.dll</h6>
               <h5 id="_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public abstract class DICOMObjectWrapper</code></pre>
+                <pre><code class="lang-csharp hljs">public abstract class DICOMObjectWrapper : object</code></pre>
               </div>
               <h3 id="constructors">Constructors
               </h3>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObjectWrapper.cs/#L11">View Source</a>
+              </span>
               <h4 id="constructors" data-uid="EvilDICOM.Core.DICOMObjectWrapper.#ctor">DICOMObjectWrapper()</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -126,7 +104,9 @@
                 <pre><code class="lang-csharp hljs">public DICOMObjectWrapper()</code></pre>
               </div>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObjectWrapper.cs/#L15">View Source</a>
+              </span>
               <h4 id="constructors" data-uid="EvilDICOM.Core.DICOMObjectWrapper.#ctor(EvilDICOM.Core.DICOMObject)">DICOMObjectWrapper(DICOMObject)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -154,7 +134,9 @@
               <h3 id="fields">Fields
               </h3>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObjectWrapper.cs/#L9">View Source</a>
+              </span>
               <h4 id="fields" data-uid="EvilDICOM.Core.DICOMObjectWrapper._dcm">_dcm</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -180,7 +162,9 @@
               <h3 id="methods">Methods
               </h3>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObjectWrapper.cs/#L20">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObjectWrapper.GetValue``1(EvilDICOM.Core.Element.Tag)">GetValue&lt;T&gt;(Tag)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -236,10 +220,12 @@
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObjectWrapper.cs/#L36">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObjectWrapper.GetWrappedSequence``1(EvilDICOM.Core.Element.Tag)">GetWrappedSequence&lt;T&gt;(Tag)</h4>
-              <div class="markdown level1 summary"><pre><code>Wraps a DICOM sequence with a type that inherits from DICOMObjectWrapper
-</code></pre></div>
+              <div class="markdown level1 summary"><p>Wraps a DICOM sequence with a type that inherits from DICOMObjectWrapper</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -273,7 +259,7 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Collections.Generic.List</span>&lt;T&gt;</td>
+                    <td><span class="xref">List</span>&lt;T&gt;</td>
                     <td><p>a list of wrapped DICOM objects</p>
 </td>
                   </tr>
@@ -296,7 +282,9 @@
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObjectWrapper.cs/#L25">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObjectWrapper.SetValue``1(EvilDICOM.Core.Element.Tag,``0)">SetValue&lt;T&gt;(Tag, T)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -342,10 +330,12 @@
                 </tbody>
               </table>
               
-              
-              <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObjectWrapper.SetWrappedSequence``1(EvilDICOM.Core.Element.Tag,System.Collections.Generic.List{``0})">SetWrappedSequence&lt;T&gt;(Tag, List&lt;T&gt;)</h4>
-              <div class="markdown level1 summary"><pre><code>Extracts the DICOMObjects out of a list of DICOMObjectWrappers and sets these as the new values in the sequence
-</code></pre></div>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Core/DICOMObjectWrapper.cs/#L56">View Source</a>
+              </span>
+              <h4 id="methods" data-uid="EvilDICOM.Core.DICOMObjectWrapper.SetWrappedSequence``1(EvilDICOM.Core.Element.Tag,List{``0})">SetWrappedSequence&lt;T&gt;(Tag, List&lt;T&gt;)</h4>
+              <div class="markdown level1 summary"><p>Extracts the DICOMObjects out of a list of DICOMObjectWrappers and sets these as the new values in the sequence</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -368,7 +358,7 @@
 </td>
                   </tr>
                   <tr>
-                    <td><span class="xref">System.Collections.Generic.List</span>&lt;T&gt;</td>
+                    <td><span class="xref">List</span>&lt;T&gt;</td>
                     <td><em>value</em></td>
                     <td><p>the list of wrapped DICOMObjects to go in the sequence</p>
 </td>

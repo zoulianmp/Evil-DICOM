@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class CFindResponse
    ">
-    <meta name="generator" content="docfx 2.13.1.0">
+    <meta name="generator" content="docfx 2.15.5.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -68,7 +68,7 @@
             <article class="content wrap" id="_content">
               
               
-              
+              <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Network/DIMSE/CFindResponse.cs/#L10" class="btn btn-primary pull-right mobile-hide">View Source</a>
               <h1 id="" data-uid="EvilDICOM.Network.DIMSE.CFindResponse">Class CFindResponse
               </h1>
               <div class="markdown level0 summary"></div>
@@ -96,7 +96,7 @@
                   <a class="xref" href="EvilDICOM.Network.DIMSE.AbstractDIMSEResponse.html">AbstractDIMSEResponse._status</a>
                 </div>
                 <div>
-                  <a class="xref" href="EvilDICOM.Network.DIMSE.AbstractDIMSEResponse.html">AbstractDIMSEResponse.MessageIDBeingResponsedTo</a>
+                  <a class="xref" href="EvilDICOM.Network.DIMSE.AbstractDIMSEResponse.html">AbstractDIMSEResponse.MessageIDBeingRespondedTo</a>
                 </div>
                 <div>
                   <a class="xref" href="EvilDICOM.Network.DIMSE.AbstractDIMSEResponse.html">AbstractDIMSEResponse.Status</a>
@@ -138,22 +138,7 @@
                   <a class="xref" href="EvilDICOM.Network.DIMSE.AbstractDIMSEBase.html">AbstractDIMSEBase.DataSetType</a>
                 </div>
                 <div>
-                  <span class="xref">System.Object.Equals(System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.GetHashCode()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.GetType()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.MemberwiseClone()</span>
+                  <a class="xref" href="EvilDICOM.Network.DIMSE.AbstractDIMSEBase.html">AbstractDIMSEBase.SetGroupLength()</a>
                 </div>
               </div>
               <h6><strong>Namespace</strong>:EvilDICOM.Network.DIMSE</h6>
@@ -165,7 +150,9 @@
               <h3 id="constructors">Constructors
               </h3>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Network/DIMSE/CFindResponse.cs/#L12">View Source</a>
+              </span>
               <h4 id="constructors" data-uid="EvilDICOM.Network.DIMSE.CFindResponse.#ctor(EvilDICOM.Core.DICOMObject)">CFindResponse(DICOMObject)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -193,13 +180,15 @@
               <h3 id="methods">Methods
               </h3>
               
-              
-              <h4 id="methods" data-uid="EvilDICOM.Network.DIMSE.CFindResponse.GetIOD">GetIOD()</h4>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Network/DIMSE/CFindResponse.cs/#L18">View Source</a>
+              </span>
+              <h4 id="methods" data-uid="EvilDICOM.Network.DIMSE.CFindResponse.GetIOD``1">GetIOD&lt;T&gt;()</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public CFindIOD GetIOD()</code></pre>
+                <pre><code class="lang-csharp hljs">public T GetIOD&lt;T&gt;()where T : AbstractDIMSEIOD</code></pre>
               </div>
               <h5 class="returns">Returns</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -211,7 +200,22 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="EvilDICOM.Network.DIMSE.IOD.CFindIOD.html">CFindIOD</a></td>
+                    <td><span class="xref">T</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>T</em></td>
                     <td></td>
                   </tr>
                 </tbody>
@@ -219,9 +223,6 @@
               <h3 id="extensionmethods">Extension Methods</h3>
               <div>
                   <a class="xref" href="EvilDICOM.Network.Extensions.DIMSEExtensions.html">DIMSEExtensions.LogData(Association)</a>
-              </div>
-              <div>
-                  <a class="xref" href="EvilDICOM.Network.Extensions.IIODExtensions.html">IIODExtensions.GetLogString()</a>
               </div>
               <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
               <!-- API Ad -->

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class QueryBuilder
    ">
-    <meta name="generator" content="docfx 2.13.1.0">
+    <meta name="generator" content="docfx 2.15.5.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -68,10 +68,10 @@
             <article class="content wrap" id="_content">
               
               
-              
+              <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Network/Querying/QueryBuilder.cs/#L19" class="btn btn-primary pull-right mobile-hide">View Source</a>
               <h1 id="" data-uid="EvilDICOM.Network.Querying.QueryBuilder">Class QueryBuilder
               </h1>
-              <div class="markdown level0 summary"><p>A class to help with CFind operations</p>
+              <div class="markdown level0 summary"><p>A class to help with CFind and CMove operations</p>
 </div>
               <div class="markdown level0 conceptual"></div>
               <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -85,42 +85,21 @@
                   <div class="level0"><span class="xref">System.Object</span></div>
                   <div class="level1"><span class="xref">QueryBuilder</span></div>
               </div>
-              <div class="inheritedMembers">
-                <h5>Inherited Members</h5>
-                <div>
-                  <span class="xref">System.Object.ToString()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.Equals(System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.GetHashCode()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.GetType()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.MemberwiseClone()</span>
-                </div>
-              </div>
               <h6><strong>Namespace</strong>:EvilDICOM.Network.Querying</h6>
               <h6><strong>Assembly</strong>:EvilDICOM.dll</h6>
               <h5 id="_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public class QueryBuilder</code></pre>
+                <pre><code class="lang-csharp hljs">public class QueryBuilder : object</code></pre>
               </div>
               <h3 id="constructors">Constructors
               </h3>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Network/Querying/QueryBuilder.cs/#L29">View Source</a>
+              </span>
               <h4 id="constructors" data-uid="EvilDICOM.Network.Querying.QueryBuilder.#ctor(EvilDICOM.Network.DICOMSCU,EvilDICOM.Network.Entity)">QueryBuilder(DICOMSCU, Entity)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>A Query builder constructor which requires a SCU and SCP entity</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -139,25 +118,29 @@
                   <tr>
                     <td><a class="xref" href="EvilDICOM.Network.DICOMSCU.html">DICOMSCU</a></td>
                     <td><em>scu</em></td>
-                    <td></td>
+                    <td><p>The SCU client which will perform the operations and queries</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="EvilDICOM.Network.Entity.html">Entity</a></td>
                     <td><em>scp</em></td>
-                    <td></td>
+                    <td><p>the SCP which will send the results</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h3 id="methods">Methods
               </h3>
               
-              
-              <h4 id="methods" data-uid="EvilDICOM.Network.Querying.QueryBuilder.GetImageUids(System.Collections.Generic.List{EvilDICOM.Network.Querying.SeriesResult})">GetImageUids(List&lt;SeriesResult&gt;)</h4>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Network/Querying/QueryBuilder.cs/#L82">View Source</a>
+              </span>
+              <h4 id="methods" data-uid="EvilDICOM.Network.Querying.QueryBuilder.GetImageUids(EvilDICOM.Network.DIMSE.IOD.CFindSeriesIOD)">GetImageUids(CFindSeriesIOD)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public List&lt;ImageResult&gt; GetImageUids(List&lt;SeriesResult&gt; series)</code></pre>
+                <pre><code class="lang-csharp hljs">public IEnumerable&lt;CFindImageIOD&gt; GetImageUids(CFindSeriesIOD series)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -170,7 +153,7 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EvilDICOM.Network.Querying.SeriesResult.html">SeriesResult</a>&gt;</td>
+                    <td><a class="xref" href="EvilDICOM.Network.DIMSE.IOD.CFindSeriesIOD.html">CFindSeriesIOD</a></td>
                     <td><em>series</em></td>
                     <td></td>
                   </tr>
@@ -186,19 +169,21 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EvilDICOM.Network.Querying.ImageResult.html">ImageResult</a>&gt;</td>
+                    <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EvilDICOM.Network.DIMSE.IOD.CFindImageIOD.html">CFindImageIOD</a>&gt;</td>
                     <td></td>
                   </tr>
                 </tbody>
               </table>
               
-              
-              <h4 id="methods" data-uid="EvilDICOM.Network.Querying.QueryBuilder.GetSeriesUids(System.Collections.Generic.List{EvilDICOM.Network.Querying.StudyResult})">GetSeriesUids(List&lt;StudyResult&gt;)</h4>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Network/Querying/QueryBuilder.cs/#L65">View Source</a>
+              </span>
+              <h4 id="methods" data-uid="EvilDICOM.Network.Querying.QueryBuilder.GetImageUids(IEnumerable{EvilDICOM.Network.DIMSE.IOD.CFindSeriesIOD})">GetImageUids(IEnumerable&lt;CFindSeriesIOD&gt;)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public List&lt;SeriesResult&gt; GetSeriesUids(List&lt;StudyResult&gt; studies)</code></pre>
+                <pre><code class="lang-csharp hljs">public IEnumerable&lt;CFindImageIOD&gt; GetImageUids(IEnumerable&lt;CFindSeriesIOD&gt; series)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -211,7 +196,209 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EvilDICOM.Network.Querying.StudyResult.html">StudyResult</a>&gt;</td>
+                    <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EvilDICOM.Network.DIMSE.IOD.CFindSeriesIOD.html">CFindSeriesIOD</a>&gt;</td>
+                    <td><em>series</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EvilDICOM.Network.DIMSE.IOD.CFindImageIOD.html">CFindImageIOD</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Network/Querying/QueryBuilder.cs/#L104">View Source</a>
+              </span>
+              <h4 id="methods" data-uid="EvilDICOM.Network.Querying.QueryBuilder.GetImageUids``1(EvilDICOM.Network.DIMSE.IOD.CFindSeriesIOD)">GetImageUids&lt;T&gt;(CFindSeriesIOD)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IEnumerable&lt;T&gt; GetImageUids&lt;T&gt;(CFindSeriesIOD series)where T : CFindImageIOD</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="EvilDICOM.Network.DIMSE.IOD.CFindSeriesIOD.html">CFindSeriesIOD</a></td>
+                    <td><em>series</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>T</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Network/Querying/QueryBuilder.cs/#L87">View Source</a>
+              </span>
+              <h4 id="methods" data-uid="EvilDICOM.Network.Querying.QueryBuilder.GetImageUids``1(IEnumerable{EvilDICOM.Network.DIMSE.IOD.CFindSeriesIOD})">GetImageUids&lt;T&gt;(IEnumerable&lt;CFindSeriesIOD&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IEnumerable&lt;T&gt; GetImageUids&lt;T&gt;(IEnumerable&lt;CFindSeriesIOD&gt; series)where T : CFindImageIOD</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EvilDICOM.Network.DIMSE.IOD.CFindSeriesIOD.html">CFindSeriesIOD</a>&gt;</td>
+                    <td><em>series</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>T</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Network/Querying/QueryBuilder.cs/#L60">View Source</a>
+              </span>
+              <h4 id="methods" data-uid="EvilDICOM.Network.Querying.QueryBuilder.GetSeriesUids(EvilDICOM.Network.DIMSE.IOD.CFindStudyIOD)">GetSeriesUids(CFindStudyIOD)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IEnumerable&lt;CFindSeriesIOD&gt; GetSeriesUids(CFindStudyIOD study)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="EvilDICOM.Network.DIMSE.IOD.CFindStudyIOD.html">CFindStudyIOD</a></td>
+                    <td><em>study</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EvilDICOM.Network.DIMSE.IOD.CFindSeriesIOD.html">CFindSeriesIOD</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Network/Querying/QueryBuilder.cs/#L44">View Source</a>
+              </span>
+              <h4 id="methods" data-uid="EvilDICOM.Network.Querying.QueryBuilder.GetSeriesUids(IEnumerable{EvilDICOM.Network.DIMSE.IOD.CFindStudyIOD})">GetSeriesUids(IEnumerable&lt;CFindStudyIOD&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IEnumerable&lt;CFindSeriesIOD&gt; GetSeriesUids(IEnumerable&lt;CFindStudyIOD&gt; studies)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EvilDICOM.Network.DIMSE.IOD.CFindStudyIOD.html">CFindStudyIOD</a>&gt;</td>
                     <td><em>studies</em></td>
                     <td></td>
                   </tr>
@@ -227,19 +414,21 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EvilDICOM.Network.Querying.SeriesResult.html">SeriesResult</a>&gt;</td>
+                    <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EvilDICOM.Network.DIMSE.IOD.CFindSeriesIOD.html">CFindSeriesIOD</a>&gt;</td>
                     <td></td>
                   </tr>
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Network/Querying/QueryBuilder.cs/#L35">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Network.Querying.QueryBuilder.GetStudyUids(System.String)">GetStudyUids(String)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public List&lt;StudyResult&gt; GetStudyUids(string patientId)</code></pre>
+                <pre><code class="lang-csharp hljs">public IEnumerable&lt;CFindStudyIOD&gt; GetStudyUids(string patientId)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -268,19 +457,22 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EvilDICOM.Network.Querying.StudyResult.html">StudyResult</a>&gt;</td>
+                    <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EvilDICOM.Network.DIMSE.IOD.CFindStudyIOD.html">CFindStudyIOD</a>&gt;</td>
                     <td></td>
                   </tr>
                 </tbody>
               </table>
               
-              
-              <h4 id="methods" data-uid="EvilDICOM.Network.Querying.QueryBuilder.SendImage(EvilDICOM.Network.Querying.ImageResult,EvilDICOM.Network.DICOMSCP)">SendImage(ImageResult, DICOMSCP)</h4>
-              <div class="markdown level1 summary"></div>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Network/Querying/QueryBuilder.cs/#L116">View Source</a>
+              </span>
+              <h4 id="methods" data-uid="EvilDICOM.Network.Querying.QueryBuilder.SendImage(EvilDICOM.Network.DIMSE.IOD.CFindImageIOD,System.String,System.UInt16@)">SendImage(CFindImageIOD, String, ref UInt16)</h4>
+              <div class="markdown level1 summary"><p>Instructs a C-MOVE operation for an image from the SCP of the QueryBuilder to the input AETitle</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void SendImage(ImageResult ir, DICOMSCP reciever)</code></pre>
+                <pre><code class="lang-csharp hljs">public CMoveResponse SendImage(CFindImageIOD ir, string receivingAETitle, ref ushort msgId)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -293,14 +485,96 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="EvilDICOM.Network.Querying.ImageResult.html">ImageResult</a></td>
+                    <td><a class="xref" href="EvilDICOM.Network.DIMSE.IOD.CFindImageIOD.html">CFindImageIOD</a></td>
                     <td><em>ir</em></td>
-                    <td></td>
+                    <td><p>the C Find iod of the a query (get ImageUids())</p>
+</td>
                   </tr>
                   <tr>
-                    <td><a class="xref" href="EvilDICOM.Network.DICOMSCP.html">DICOMSCP</a></td>
-                    <td><em>reciever</em></td>
-                    <td></td>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>receivingAETitle</em></td>
+                    <td><p>the AE title to send the image to (from the SCP of this query builder)</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.UInt16</span></td>
+                    <td><em>msgId</em></td>
+                    <td><p>the message id for this image. It will be incremented for looping operations within this method</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="EvilDICOM.Network.DIMSE.CMoveResponse.html">CMoveResponse</a></td>
+                    <td><p>a C-MOVE response for this operation</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Network/Querying/QueryBuilder.cs/#L129">View Source</a>
+              </span>
+              <h4 id="methods" data-uid="EvilDICOM.Network.Querying.QueryBuilder.SendImageAsync(EvilDICOM.Network.DIMSE.IOD.CFindImageIOD,System.String,System.UInt16)">SendImageAsync(CFindImageIOD, String, UInt16)</h4>
+              <div class="markdown level1 summary"><p>Instructs a C-MOVE operation for an image from the SCP of the QueryBuilder to the input AETitle</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Task&lt;CMoveResponse&gt; SendImageAsync(CFindImageIOD ir, string receivingAETitle, ushort msgId)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="EvilDICOM.Network.DIMSE.IOD.CFindImageIOD.html">CFindImageIOD</a></td>
+                    <td><em>ir</em></td>
+                    <td><p>the C Find iod of the a query (get ImageUids())</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>receivingAETitle</em></td>
+                    <td><p>the AE title to send the image to (from the SCP of this query builder)</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.UInt16</span></td>
+                    <td><em>msgId</em></td>
+                    <td><p>the message id for this image. It will NOT be incremented for looping operations within this method</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Task</span>&lt;<a class="xref" href="EvilDICOM.Network.DIMSE.CMoveResponse.html">CMoveResponse</a>&gt;</td>
+                    <td><p>a C-MOVE response for this operation</p>
+</td>
                   </tr>
                 </tbody>
               </table>

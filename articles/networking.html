@@ -8,7 +8,7 @@
     <title>Evil DICOM Networking </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Evil DICOM Networking ">
-    <meta name="generator" content="docfx 2.13.1.0">
+    <meta name="generator" content="docfx 2.15.5.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -64,6 +64,7 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="networking.md">
+              <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/DocFx/articles/networking.md/#L1" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
               <h2 id="entities">Entities</h2>
               
 <p>In DICOM networking, the networking objects that communicate are called Entities, or Application Entities. An entity has a label called an AETitle, a port, and an IP address where it can be reached. To contruct this information in Evil DICOM, use:</p>
@@ -115,7 +116,7 @@ foreach (var im in images)
     //This will only return after the image was successfully transferred or there was an error.
     var resp = scu.SendCMoveImage(daemon, im, &quot;EvilDICOMCatcher&quot;, ref msg);
     Console.WriteLine(&quot;CMoveResp recieved {0} {1}&quot;, resp.MessageIDBeingResponsedTo, resp.Status);
-}
+}    
 </code></pre><p>That is probably enough to make you dangerous. The networking API is not fully developed but contains many pieces you will need to perform DICOM and DIMSE tasks.</p>
 
             </article>

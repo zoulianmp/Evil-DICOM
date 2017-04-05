@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class StudyIdAnonymizer
    ">
-    <meta name="generator" content="docfx 2.13.1.0">
+    <meta name="generator" content="docfx 2.15.5.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -68,10 +68,11 @@
             <article class="content wrap" id="_content">
               
               
-              
+              <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Anonymization/Anonymizers/StudyIdAnonymizer.cs/#L17" class="btn btn-primary pull-right mobile-hide">View Source</a>
               <h1 id="" data-uid="EvilDICOM.Anonymization.Anonymizers.StudyIdAnonymizer">Class StudyIdAnonymizer
               </h1>
-              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 summary"><p>Removes the study id from the DICOM files and creates a new study id</p>
+</div>
               <div class="markdown level0 conceptual"></div>
               <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
               <!-- API Ad -->
@@ -84,40 +85,18 @@
                   <div class="level0"><span class="xref">System.Object</span></div>
                   <div class="level1"><span class="xref">StudyIdAnonymizer</span></div>
               </div>
-              <div class="inheritedMembers">
-                <h5>Inherited Members</h5>
-                <div>
-                  <span class="xref">System.Object.ToString()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.Equals(System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.GetHashCode()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.GetType()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.MemberwiseClone()</span>
-                </div>
-              </div>
               <h6><strong>Namespace</strong>:EvilDICOM.Anonymization.Anonymizers</h6>
               <h6><strong>Assembly</strong>:EvilDICOM.dll</h6>
               <h5 id="_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public class StudyIdAnonymizer : IAnonymizer</code></pre>
+                <pre><code class="lang-csharp hljs">public class StudyIdAnonymizer : object, IAnonymizer</code></pre>
               </div>
               <h3 id="constructors">Constructors
               </h3>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Anonymization/Anonymizers/StudyIdAnonymizer.cs/#L20">View Source</a>
+              </span>
               <h4 id="constructors" data-uid="EvilDICOM.Anonymization.Anonymizers.StudyIdAnonymizer.#ctor">StudyIdAnonymizer()</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -128,7 +107,9 @@
               <h3 id="properties">Properties
               </h3>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Anonymization/Anonymizers/StudyIdAnonymizer.cs/#L140">View Source</a>
+              </span>
               <h4 id="properties" data-uid="EvilDICOM.Anonymization.Anonymizers.StudyIdAnonymizer.Name">Name</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -152,9 +133,12 @@
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Anonymization/Anonymizers/StudyIdAnonymizer.cs/#L28">View Source</a>
+              </span>
               <h4 id="properties" data-uid="EvilDICOM.Anonymization.Anonymizers.StudyIdAnonymizer.StudyDictionary">StudyDictionary</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>A dictionary which stores the original study id and type of study</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -170,7 +154,7 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+                    <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
                     <td></td>
                   </tr>
                 </tbody>
@@ -178,7 +162,9 @@
               <h3 id="methods">Methods
               </h3>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Anonymization/Anonymizers/StudyIdAnonymizer.cs/#L85">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Anonymization.Anonymizers.StudyIdAnonymizer.AddDICOMObject(EvilDICOM.Core.DICOMObject)">AddDICOMObject(DICOMObject)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -204,7 +190,9 @@
                 </tbody>
               </table>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Anonymization/Anonymizers/StudyIdAnonymizer.cs/#L104">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Anonymization.Anonymizers.StudyIdAnonymizer.Anonymize(EvilDICOM.Core.DICOMObject)">Anonymize(DICOMObject)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -232,7 +220,9 @@
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="EvilDICOM.Anonymization.IAnonymizer.html">IAnonymizer.Anonymize(DICOMObject)</a></div>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Anonymization/Anonymizers/StudyIdAnonymizer.cs/#L33">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Anonymization.Anonymizers.StudyIdAnonymizer.FinalizeDictionary">FinalizeDictionary()</h4>
               <div class="markdown level1 summary"><p>This method is to be called once all DICOM objects are added. It then remaps study ids in a private dictionary</p>
 </div>
@@ -242,7 +232,9 @@
                 <pre><code class="lang-csharp hljs">public void FinalizeDictionary()</code></pre>
               </div>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Anonymization/Anonymizers/StudyIdAnonymizer.cs/#L38">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Anonymization.Anonymizers.StudyIdAnonymizer.GenerateNames">GenerateNames()</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -251,7 +243,9 @@
                 <pre><code class="lang-csharp hljs">public void GenerateNames()</code></pre>
               </div>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Anonymization/Anonymizers/StudyIdAnonymizer.cs/#L49">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Anonymization.Anonymizers.StudyIdAnonymizer.GenerateNamesByType">GenerateNamesByType()</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -260,7 +254,9 @@
                 <pre><code class="lang-csharp hljs">public void GenerateNamesByType()</code></pre>
               </div>
               
-              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/rexcardan/Evil-DICOM/blob/master/EvilDICOM/EvilDICOM/Anonymization/Anonymizers/StudyIdAnonymizer.cs/#L119">View Source</a>
+              </span>
               <h4 id="methods" data-uid="EvilDICOM.Anonymization.Anonymizers.StudyIdAnonymizer.GetFileType(EvilDICOM.Core.DICOMObject)">GetFileType(DICOMObject)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
