@@ -8,7 +8,7 @@
     <title>Basic Operations </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Basic Operations ">
-    <meta name="generator" content="docfx 2.15.5.0">
+    <meta name="generator" content="docfx 2.16.0.499">
     
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/docfx.vendor.css">
@@ -32,7 +32,7 @@
                 <span class="icon-bar"></span>
               </button>
               <a class="navbar-brand" href="index.html">
-                <img id="logo" class="svg" src="images/logo.png" alt="">
+                <img id="logo" class="svg" src="logo.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -70,10 +70,10 @@
 var dBytes = File.ReadAllBytes(@&quot;MyDICOMFile.dcm&quot;);
 var dcm = DICOMObject.Read(dBytes);
 
-//***COOL CODE GOES HERE***
+    //***COOL CODE GOES HERE***
+    //Writing is equally easy
 
-//Writing is equally easy
-dcm.SaveAs(&quot;MyHackedDICOMFile.dcm&quot;);
+dcm.Write(&quot;MyHackedDICOMFile.dcm&quot;);
 </code></pre><p>The dcm variable is now a DICOM object. It is in fact the outermost DICOM object from the file string that was input into the Read() method. The DICOMObject class is the main class of Evil DICOM.  Of course the DICOM object is really just a container for all of the DICOM elements that you will want to get and luckily for you, it is easy to do. Now that we did the useless task of reading a file and writing it back unchanged, let&#39;s look at some code we can insert in between.</p>
 <h3 id="working-with-elements">Working With Elements</h3>
 <h4 id="the-idicomelement-interface">The IDICOMElement Interface</h4>
@@ -155,11 +155,9 @@ var x = xyz[0];
 var y = xyz[1];
 var z = xyz[2];
 </code></pre><h3 id="see-also">See Also</h3>
-<ul>
-<li><a class="xref" href="articles/structure.html">Evil DICOM Structure</a></li>
-<li><a class="xref" href="articles/selection.html">Evil DICOM Selection</a></li>
-<li><a class="xref" href="articles/helpers.html">Evil DICOM Helpers</a></li>
-</ul>
+<p><a class="xref" href="articles/structure.html">Evil DICOM Structure</a>
+<a class="xref" href="articles/selection.html">Evil DICOM Selection</a>
+<a class="xref" href="articles/helpers.html">Evil DICOM Helpers</a></p>
 
             </article>
           </div>
