@@ -118,7 +118,12 @@ namespace EvilDICOM.RT
             {
                 var max = DoseValues.Max();
                 var index = DoseValues.IndexOf(max);
-                var (x, y, z) = IndexHelper.IndexToLatticeXYZ(index, DimensionX, DimensionY);
+                var xyzIndex= IndexHelper.IndexToLatticeXYZ(index, DimensionX, DimensionY);
+
+                var x = xyzIndex.Item1;
+                var y = xyzIndex.Item2;
+                var z = xyzIndex.Item3;
+
                 return new DoseValue(x * XRes + X0, y * YRes + Y0, z * ZRes + Z0, max);
             }
         }

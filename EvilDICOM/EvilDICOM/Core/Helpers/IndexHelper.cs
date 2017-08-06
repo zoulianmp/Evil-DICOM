@@ -17,11 +17,13 @@ namespace EvilDICOM.Core.Helpers
         /// <param name="index">the 1D index of the pixel</param>
         /// <param name="dimX">the width of the lattice in the X direction</param>
         /// <returns>a value tuple of the X,Y,Z coordiantes </returns>
-        public static (int x, int y) IndexToLatticeXY(int index, int dimX)
+        public static Tuple<int, int>  IndexToLatticeXY(int index, int dimX)
         {
             var y = index / dimX; 
             var x = index % dimX;
-            return (x, y);
+
+            return new Tuple<int, int>(x, y);
+             
         }
 
         /// <summary>
@@ -43,12 +45,13 @@ namespace EvilDICOM.Core.Helpers
         /// <param name="dimX">the width of the lattice in the X direction</param>
         /// <param name="dimY">the height of the lattice in the Y direction</param>
         /// <returns>a value tuple of the X,Y,Z coordiantes </returns>
-        public static (int x, int y, int z) IndexToLatticeXYZ(int index, int dimX, int dimY)
+        public static Tuple<int,int, int> IndexToLatticeXYZ(int index, int dimX, int dimY)
         {
             var z = index / (dimX * dimY);
             var y = index % (dimX * dimY) / dimX;
             var x = index % (dimX * dimY) % dimX;
-            return (x, y, z);
+
+            return new Tuple<int, int, int>(x, y, z);
         }
 
         /// <summary>
